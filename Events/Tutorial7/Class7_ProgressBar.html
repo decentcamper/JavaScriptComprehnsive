@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Progress Bar</title>
+        <script type="text/javascript">
+            function progress(){ // Set the width of the image every .5 second
+                if (document.images["bar"].width < 300) {
+                    document.images["bar"].width += 5;
+                    document.images["bar"].height = 50;
+                    // Setting the height keeps the bar from getting taller as the image is widened.
+                }
+                else {
+                    clearInterval(ID);
+                }
+            }
+            
+            var ID;
+            window.onload = function(){
+                ID = setInterval("progress();", 500);
+                // Image is stretched every .5 seconds
+            }
+        </script>
+    </head>
+    <body bgColor="aquamarine">
+    	Ê
+        <img src="../images/blackbar.jpeg " height="10" name="bar"/>
+        <p>
+            Watching your Progress
+        </p>
+    </body>
+</html>

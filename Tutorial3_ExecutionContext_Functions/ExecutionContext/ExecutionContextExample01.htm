@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Execution Context Example 1</title>
+    <script type="text/javascript">
+        var color = "blue";
+        function changeColor(){
+            if (color === "blue"){
+                color = "red";
+            } else {
+                color = "blue";
+            }
+        }
+        changeColor();
+    </script>
+
+</head>
+<body style="background-color: #ffffe0">
+  <a>In this simple example, the function changeColor() has a scope chain with two objects in it: its own
+      variable object (upon which the arguments object is defined) and the global context’s variable object.
+      The variable color is therefore accessible inside the function, because it can be found in the scope chain.</a>
+</body>
+</html>

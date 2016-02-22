@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--In this code, the toString() and valueOf() methods are fi rst called explicitly to return the string-->
+    <!--representation of the array, which combines the strings, separating them by commas. The last-->
+    <!--line passes the array directly into alert(). Because alert() expects a string, it calls toString()-->
+    <!--behind the scenes to get the same result as when toString() is called directly.-->
+    <title>Array Type Example 7</title>
+    <script type="text/javascript">
+        
+        var colors = ["red", "blue", "green"];    //creates an array with three strings
+        alert(colors.toString());    //red,blue,green
+        alert(colors.valueOf());     //red,blue,green
+        alert(colors);               //red,blue,green
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

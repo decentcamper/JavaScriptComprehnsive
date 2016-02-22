@@ -1,0 +1,92 @@
+<html><head><title>Drop-Down Menu</title>
+    <style type="text/css">
+        a { font-family: verdana, arial;
+            color: darkblue;
+            font-weight: bold;
+            margin-left: 4px
+        } /*link style for main menu*/
+        a:link {text-decoration: none}
+        a:visited {text-decoration: none}
+        a:active {text-decoration: none}
+        a:hover {text-decoration: brown: red;}
+        #menu, .menu {
+              font-stye: verdana;
+              font-size:10pt;
+              color:black; }
+            /* link style for drop-down menu */
+        #menu { position:absolute;
+              top:40px;
+              border-style:solid;
+              border-width:1px;
+              padding: 5px;
+              background-color:yellow;
+              width:75px;
+              color: black;
+              font-size: 12pt;
+              visibility:hidden; }
+        #menu2 { position:absolute;
+              top:40px;
+              left:auto;
+              border-width:1px;
+              padding: 5px;
+              background-color:orange;
+              width:80px;
+              color: black;
+              font-size: 12pt;
+              visibility:hidden; }
+        #menu3 { position:absolute;
+              top:40px;
+              left:6.2cm;
+              border-style:solid;
+              border-width:1px;
+              padding: 5px;
+              background-color:pink;
+              width:80px;
+              color: black;
+              font-size: 12pt;
+              visibility:hidden; }
+    </style>
+    <script language="JavaScript">
+        function showMenu(id){
+            var ref = document.getElementById(id);
+            ref.style.visibility = "visible"; // Make the drop-down
+// menu visible
+        }
+        function hideMenu(id){
+            var ref = document.getElementById(id);
+            ref.style.visibility = "hidden"; // Hide the drop-down menu
+        }
+    </script>
+<body bgColor="#ffe4c4">
+<table width="350" border="2" bgcolor="aqua" cellspacing="1"
+         cellpadding="2">
+    <tr>
+    <td width="100">
+     <div id="menu" onDblClick="hideMenu('menu');">
+     <a class="menu" href="#">US</a><br>
+    <a class="menu" href="#">World</a><br>
+    <a class="menu" href="#">Local </a><br>
+</div>
+    <a href="#" onClick="showMenu('menu');">News</a>
+</td>
+
+    <td width="100">
+        <div id="menu2" onDblClick="hideMenu('menu2');">
+            <a class="menu" href="#">Basketball</a><br>
+            <a class="menu" href="#">Football</a><br>
+            <a class="menu" href="#>">Soccer</a><br>
+        </div>
+        <a href="#" onClick="showMenu('menu2');">Sports</a>
+    </td>
+    <td width="100">
+        <div id="menu3" onDblClick="hideMenu('menu3');">
+            <a class="menu" href="#">Movies</a><br>
+            <a class="menu" href="#">Plays</a><br>
+            <a class="menu" href="#>">DVD's</a><br>
+        </div>
+        <a href="#" onClick="showMenu('menu3');">Entertainment</a>
+    </td>
+</tr>
+</table>
+</body>
+</html>

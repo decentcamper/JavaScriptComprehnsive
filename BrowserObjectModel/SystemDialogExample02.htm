@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--To determine if the user clicked OK or Cancel, the confirm() method-->
+    <!--returns a Boolean value: true if OK was clicked, or false if Cancel-->
+    <!--was clicked or the dialog box was closed by clicking the X in the-->
+    <!--corner.-->
+
+    <!--In this example, the confi rm dialog is displayed to the user in the fi rst line,-->
+    <!--which is a condition of the if statement.-->
+    <!--If the user clicks OK, an alert is displayed saying, “I’m so glad you’re sure!”-->
+    <!--If, however, the Cancel button is clicked, an alert is displayed saying, “I’m sorry to hear you’re-->
+    <!--not sure.” This type of pattern is often employed when the user tries to delete something, such as-->
+    <!--an e-mail message.-->
+    <title>System Dialogs Example 2</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        if (confirm("Are you sure?")) {
+            alert("I'm so glad you're sure! ");
+        } else {
+             alert("I'm sorry to hear you're not sure. ");
+        }
+
+    </script>
+</body>
+</html>

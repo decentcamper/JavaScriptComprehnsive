@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="US State Capitals"
+               description="The capitals (and capitols) of the 50 US states."
+               author="Sterling Udell"
+               author_email="sterling.udell+mapplet@googlemail.com"
+             screenshot="http://sterlingudell.com/bgmm/chapter_09/state_scr.png"
+             thumbnail="http://sterlingudell.com/bgmm/chapter_09/state_thm.png">
+    <Require feature="sharedmap" />
+    <Require feature="dynamic-height" />
+  </ModulePrefs>
+  <Content type="html"><![CDATA[
+    <style type="text/css">
+      p {
+        font-size: 90%;
+      }
+    </style>
+    
+    <p id="list"></p>
+
+    <script type="text/javascript">
+      var scriptUrl = _IG_GetCachedUrl('http://sterlingudell.com/bgmm/egeoxml.js');
+      document.write(
+        '<script type="text/javascript" src="' + scriptUrl + '"><\/script>');
+
+      function xmlParsed()
+      {
+        // xmlParsed: After KML processing, adjust the height of the sidebar display
+        _IG_AdjustIFrameHeight();
+      };
+
+      function loadMap()
+      {
+        // Initialize the map
+        var map = new GMap2();
+  
+        // Initialize a custom marker icon
+        var starIcon = new GIcon();
+        starIcon.image = 'http://gmodules.com' + 
+          _IG_GetCachedUrl('http://sterlingudell.com/bgmm/markers/star.png');
+        starIcon.iconSize         = new GSize(17, 17);
+        starIcon.iconAnchor       = new GPoint(8, 8);
+        starIcon.infoWindowAnchor = new GPoint(12, 4);
+  
+        // Initialize the KML processor
+        var url = 'http://sterlingudell.com/bgmm/chapter_09/state_capitals.kml';
+        var options = {sidebarid: 'list', 
+                       markeroptions: {icon: starIcon},
+                       nozoom: true};
+        var geoXml = new EGeoXml(map, url, options);
+  
+        // Attach an event handler for after the KML is processed
+        GEvent.addListener(geoXml, 'parsed', xmlParsed);
+  
+        // Load the KML
+        geoXml.parse();
+      };
+      _IG_RegisterOnloadHandler(loadMap);
+    </script>
+  ]]></Content>
+</Module>

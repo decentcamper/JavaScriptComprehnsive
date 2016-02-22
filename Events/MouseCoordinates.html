@@ -1,0 +1,23 @@
+<head><title>Mouse Coordinates</title></head>
+<script type="text/javascript">
+    function getCoords(e) {
+        var x = 0; // x and y positions
+        var y = 0;
+         if (!e) var e = window.event; //IE
+         if (e.pageX || e.pageY){ // Firefox
+            x = e.pageX;
+            y = e.pageY;
+        }
+
+// x and y contain the mouse position relative to the document
+        alert(x +", "+ y);
+    }</script>
+<head>
+<body>
+<div style="background-color:aqua;position:absolute;top:50px"
+     onMouseover="return getCoords(event);">
+    <h1>Mouse positions are relative to the document, not the &lt;div&gt;
+        container</h1>
+</div>
+</body>
+</html>

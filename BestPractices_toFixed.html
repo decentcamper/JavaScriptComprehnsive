@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the fixed number.</p>
+
+<input type="number" id="userInput">
+
+<button onclick="myFunction()">Click to Format</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var theNumberKeyed = document.getElementById("userInput").value;
+        if(theNumberKeyed && isFinite(theNumberKeyed)){
+            var num = Number(theNumberKeyed);
+            var n = num.toFixed(2);
+            document.getElementById("demo").innerHTML = n;
+
+        }else{
+            document.getElementById("demo").innerHTML = "Please enter the correct NUMERIC value";
+
+        }
+
+    }
+</script>
+
+</body>
+</html>

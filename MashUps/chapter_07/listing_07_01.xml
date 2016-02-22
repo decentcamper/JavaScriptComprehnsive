@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Creating a Mapplet">
+    <Require feature="sharedmap" />
+  </ModulePrefs>
+  <Content type="html"><![CDATA[
+    <style type="text/css">
+      h1 {
+        font-size: 120%;
+      }
+    </style>
+
+    <h1>New York City</h1>
+    <p id="hello">Hello, World!</p>
+
+    <script type="text/javascript">
+      // Initialize the map
+      var map = new GMap2();
+      var coordinates = new GLatLng(40.72, -73.99);
+      map.setCenter(coordinates, 11);
+
+      // Add a marker with infowindow
+      var marker = new GMarker(coordinates);
+      marker.bindInfoWindow(document.getElementById('hello'));
+      map.addOverlay(marker); 
+    </script>
+  ]]></Content>
+</Module>

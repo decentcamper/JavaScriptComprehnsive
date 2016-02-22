@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Type apply() Method Example</title>
+    <!--In this example, callSum1() executes the sum() method, passing in this as the this value (which-->
+    <!--is equal to window because it’s being called in the global scope) and also passing in the arguments-->
+    <!--object. The callSum2() method also calls sum(), but it passes in an array of the arguments instead.-->
+    <!--Both functions will execute and return the correct result.-->
+
+    <script type="text/javascript">
+        
+        function sum(num1, num2){
+            return num1 + num2;
+        }
+
+     function callSum1(num1, num2){ // decortator technique in JS
+            return sum.call(this, num1,num2);
+        }
+        
+        function callSum2(num1, num2){
+            return sum.apply(this, [num1, num2]);
+        }
+
+
+        
+        alert(callSum1(10,20));   //20
+        alert(callSum2(10,30));   //20
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

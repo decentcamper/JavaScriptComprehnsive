@@ -1,0 +1,34 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Event Handler Example</title>
+
+
+</head>
+<body>
+<!-- outputs "click" -->
+<input type="button" id= "button1" value="Click Me" onclick="myHandler">
+
+<script type="text/javascript">
+    var button = document.getElementById("button1");
+    button.onclick = myHandler;
+
+    button.addEventListener("click",myHandler,true);
+
+    function myHandler(event){
+        alert(event.type);
+        var button = event.target;
+        alert(button.value);
+
+    }
+
+    /* button.addEventListener("click",function(event){
+     alert(event.type);
+
+
+     })*/
+
+</script>
+</body>
+</html>

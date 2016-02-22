@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--In this code, the fi rst line creates an array with three string values. The second line creates an empty-->
+    <!--array by using empty square brackets. The third line shows the effects of leaving a comma after-->
+    <!--the last value in an array literal: in Internet Explorer 8 and earlier, values becomes a three-item-->
+    <!--array containing the values 1, 2, and undefined; in all other browsers, values is a two-item array-->
+    <!--containing the values 1 and 2. This is due to a bug regarding array literals in the Internet Explorer-->
+    <!--implementation of ECMAScript through version 8 of the browser. Another instance of this bug is-->
+    <!--shown in the last line, which creates an array with either fi ve (in Internet Explorer 9+, Firefox, Opera,-->
+    <!--Safari, and Chrome) or six (in Internet Explorer 8 and earlier) items. By omitting values between-->
+    <!--the commas, each item gets a value of undefined, which is logically the same as calling the Array-->
+    <!--constructor and passing in the number of items. However, because of the inconsistent implementation-->
+    <!--of early versions of Internet Explorer, using this syntax is strongly discouraged.-->
+    <title>Array Type Example 2</title>
+    <script type="text/javascript">
+        
+        var colors = ["red", "blue", "green"]; //creates an array with three strings
+        var names = [];                        //creates an empty array
+        var values = [10,20,];                   //AVOID! Creates an array with 2 or 3 items
+        var options = [,,,,,];                 //AVOID! creates an array with 5 or 6 items
+        
+        alert(colors.length);    //3
+        alert(names.length);     //0
+        alert(values.length);    //2 (FF, Safari, Opera) or 3 (IE)
+        alert(options.length);   //5 (FF, Safari, Opera) or 6 (IE)
+        alert(colors[1]);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

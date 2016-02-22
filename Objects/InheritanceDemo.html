@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script type="application/javascript">
+
+    function Shape(){
+        this.name = 'shape';
+        this.toString = function() {return this.name;};
+    }
+    function TwoDShape(){
+        this.name = '2D shape';
+    }
+    function Triangle(side, height) {
+        this.name = 'Triangle';
+        this.side = side;
+        this.height = height;
+        this.getArea = function(){return this.side * this.height / 2;};
+    }
+    TwoDShape.prototype = new Shape(); // It actual
+    Triangle.prototype = new TwoDShape();
+    var trianagle1 = new Triangle();
+    alert(trianagle1.toString());
+
+
+
+</script>
+
+</body>
+</html>

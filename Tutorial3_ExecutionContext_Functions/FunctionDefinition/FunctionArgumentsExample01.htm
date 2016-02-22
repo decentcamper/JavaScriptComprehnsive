@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--Here, the function addTen() has an argument num, which is essentially a local variable. When called,-->
+    <!--the variable count is passed in as an argument. This variable has a value of 20, which is copied-->
+    <!--into the argument num for use inside of addTen(). Within the function, the argument num has its-->
+    <!--value changed by adding 10, but this doesn’t change the original variable count that exists outside-->
+    <!--of the function. The argument num and the variable count do not recognize each other; they only-->
+    <!--happen to have the same value. If num had been passed by reference, then the value of count would-->
+    <!--have changed to 30 to reflect the change made inside the function.-->
+
+    <title>Function Arguments Example 1</title>
+    <script type="text/javascript">
+        function addTen(num) {
+            num += 10;
+            return num;
+        }
+        
+        var count = 20
+        var result = addTen(count);
+        alert(count);    //20
+        alert(result);   //10
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

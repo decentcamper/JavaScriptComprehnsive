@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--Note that when you’re using timeouts, it is unnecessary to track the timeout ID, because the-->
+    <!--execution will stop on its own and continue only if another timeout is set. This pattern is considered-->
+    <!--a best practice for setting intervals without actually using intervals. True intervals are rarely used-->
+    <!--in production environments because the time between the end of one interval and the beginning of-->
+    <!--the next is not necessarily guaranteed, and some intervals may be skipped. Using timeouts, as in the-->
+    <!--preceding example, ensures that can’t happen. Generally speaking, it’s best to avoid intervals.-->
+    <title>Timeout Example 3</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        var num = 0;
+        var max = 100;
+        
+        function incrementNumber() {
+            num++;
+        
+            //if the max has not been reached, set another timeout
+            if (num < max) {
+                setTimeout(incrementNumber, 500);
+            } else {
+                alert("Done");
+            }
+        }
+        
+        setTimeout(incrementNumber, 500);
+
+
+
+    </script>
+</body>
+</html>

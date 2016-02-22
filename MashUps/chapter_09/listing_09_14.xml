@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Breweries in Great Britain"
+               directory_title="British Breweries"
+               description="Map the locations of all breweries and brewpubs in Great Britain."
+               author="Sterling Udell"
+               author_email="sterling.udell+mapplet@googlemail.com"
+               screenshot="http://sterlingudell.com/bgmm/chapter_09/brewery_scr.png"
+               thumbnail="http://sterlingudell.com/bgmm/chapter_09/brewery_thm.png">
+    <Require feature="sharedmap" />
+    <Require feature="dynamic-height"/> 
+  </ModulePrefs>
+  <Content type="html"><![CDATA[
+    <style type="text/css">
+      ul {
+        font-size: 90%;
+        padding-left: 1em;
+      }
+      li {
+        padding-left: 0em;
+      }
+    </style>
+    
+    <ol id="list"></ol>
+
+    <script type="text/javascript" 
+        src="http://sterlingudell.com/bgmm/egeoxml.js"></script>
+    <script type="text/javascript" 
+        src="http://sterlingudell.com/bgmm/chapter_09/listing_09_15.js"></script>
+    <script type="text/javascript">
+      // Initialize the map
+      map = new GMap2();
+
+      // Initialize the KML processor
+      var url = 'http://sterlingudell.com/bgmm/chapter_09/uk_breweries.kml';
+      var options = {sidebarid: 'list', createmarker: addDataPoint, nozoom: true};
+      geoXml = new EGeoXml(map, url, options);
+  
+      // Attach an event handler for after the KML is processed
+      GEvent.addListener(geoXml, 'parsed', xmlParsed);
+  
+      // Load the KML
+      geoXml.parse();
+
+      // Attach an event to refresh the marker display whenever the map moves
+      GEvent.addListener(map, 'moveend',         mapMoveEnd);
+	    GEvent.addListener(map, 'infowindowopen',  mapInfoWindowOpen);
+      GEvent.addListener(map, 'infowindowclose', mapInfoWindowClose);
+    </script>
+
+    <hr /><p>This mapplet is an example from the book:</p>
+    <iframe src="http://rcm.amazon.com/e/cm?t=gadgplan-20&o=1&p=8&l=as1&asins=1430216204&nou=1&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+  ]]></Content>
+</Module>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--The last item in an array is always at position length – 1, so the next available
+     open slot is at-->
+    <!--position length. Each time an item is added after the last one in the array,
+    the length property is-->
+    <!--automatically updated to reflect the change.
+    That means colors[colors.length] assigns a value-->
+    <!--to position 3 in the second line of this example and to position 4 in
+    the last line.-->
+    <title>Array Type Example 5</title>
+    <script type="text/javascript">
+        
+        var colors = ["red", "blue", "green"];    //creates an array with three strings
+        colors[colors.length] = "black";          //add a color
+        colors[colors.length] = "brown";          //add another color
+
+        alert(colors.length);    //5
+        alert(colors[3]);        //black
+
+
+        alert(colors[4]);        //brown
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

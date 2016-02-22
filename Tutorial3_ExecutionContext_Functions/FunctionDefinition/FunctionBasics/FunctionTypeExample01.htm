@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--This code defines a function named sum() that adds two numbers together.
+     A variable, anotherSum,-->
+    <!--is declared and set equal to sum. Note that using the function name
+    without parentheses accesses the-->
+    <!--function pointer instead of executing the function.
+    At this point, both anotherSum and sum point-->
+    <!--to the same function, meaning that anotherSum() can be called and a
+     result returned. When sum-->
+    <!--is set to null, it severs its relationship with the function,
+    although anotherSum() can still be called-->
+    <!--without any problems.-->
+    <title>Function Type Example</title>
+    <script type="text/javascript">
+    
+        var sum =  function(num1, num2){
+            return num1 + num2;
+        }        
+        alert(sum(10,10));    //20
+        
+        var anotherSum = sum;        
+        alert(anotherSum(10,10));  //20
+        
+        sum = null;        
+        alert(anotherSum(10,10));  //20
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

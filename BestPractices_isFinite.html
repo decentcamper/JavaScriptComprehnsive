@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+
+<pre class="prettyprint">
+<p>The isFinite() function returns false if the value is +infinity, -infinity, or NaN,
+    otherwise it returns true.
+Click the button to check whether a number is a finite, legal number.</p>
+</pre>
+<button onclick="myFunction()">Click to Try isFinite</button>
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var a = "isFinite(123) &nbsp >> &nbsp" +  isFinite(123) + "<br>";
+        var b = "isFinite(-1.23  &nbsp >> &nbsp" +  isFinite(-1.23) + "<br>";
+        var c = "isFinite(5-2)  &nbsp >> &nbsp"  +   isFinite(5-2) + "<br>";
+        var d = "isFinite(0)  &nbsp >> &nbsp"    + isFinite(0) + "<br>";
+        var e = 'isFinite("Hello")  &nbsp >> &nbsp' + isFinite("Hello") + "<br>";
+        var f = 'isFinite("2005/12/12")  &nbsp >> &nbsp' +isFinite("2005/12/12") + "<br>";
+        var g = 'isFinite("123abc")  &nbsp >> &nbsp' + isFinite("123abc") + "<br>";
+
+        var res = a + b + c + d + e + f+ g;
+        document.getElementById("demo").innerHTML = res;
+    }
+</script>
+
+</body>
+</html>

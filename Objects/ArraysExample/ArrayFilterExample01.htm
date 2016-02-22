@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--The next method is filter(), which uses the given function to determine
+    if an item should be-->
+    <!--included in the array that it returns.
+    For example, to return an array of all numbers greater than 2,-->
+    <!--the following code can be used:-->
+    <title>Array indexOf() Example</title>
+</head>
+<body>
+    <script>
+        var numbers = [1,2,3,4,5,4,3,2,1];
+
+        var myCallBack = function(item, index, array){
+            return (item > 2);
+        }
+        
+        var filterResult = numbers.filter(myCallBack);
+        
+        alert(filterResult);   //[3,4,5,4,3]
+
+//        Here, an array containing the values 3, 4, 5, 4, and 3 is
+// created and returned by the call to
+//        filter(), because the passed-in function
+// returns true for each of those items. This method is very
+//        helpful when querying an array for all items matching some criteria.
+
+    </script>
+</body>
+</html>

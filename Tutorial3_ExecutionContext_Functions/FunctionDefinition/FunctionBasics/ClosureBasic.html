@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script type="application/javascript">
+
+    function showName(firstName, lastName) {
+        var nameIntro = "Your name is ";
+        // this inner function has access to the outer function's variables, including the parameter
+        function makeFullName() { 
+                return nameIntro + firstName + " " + lastName; 
+        }
+
+        return makeFullName; 
+    };
+
+    var reciever  = showName("Michael", "Jackson"); // Your name is Michael Jackson 
+    var reciever1  = showName("Vik", "Sharma"); // Your name is Michael Jackson 
+    alert(reciever());
+    alert(reciever1());
+
+</script>
+</body>
+</html>

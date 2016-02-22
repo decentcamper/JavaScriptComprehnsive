@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Execution Context Example 5</title>
+
+
+</head>
+<body>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+<script type="text/javascript" src="js/ExecutionContext05.js"></script>
+
+<pre class="prettyprint">
+<p> Here, the variable sum is initialized to a value without ever having been declared using var.
+    When add() is called, sum is created in the global context and continues to exist even after the function has completed, allowing you to access it later.
+</p>
+
+    // var sum  = 5;
+        function add(num1, num2) {
+             sum = num1 + num2;
+
+            return sum;
+        }
+
+        var result = add(10, 20);  //30
+        alert(sum);                //30
+
+</pre>
+
+</body>
+</html>

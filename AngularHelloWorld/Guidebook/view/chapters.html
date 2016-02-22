@@ -1,0 +1,68 @@
+
+<ul>
+  <li class='chatper' ng-repeat='chapter in chapters | orderBy:"title"'>
+    <h2>{{chapter.title}}</h2>
+    <p>{{chapter.summary}}</p>
+    <p>
+      <a href='#/chapter/{{chapter.id}}'>
+        {{chapter.notes.length}}
+        <span ng-show='chapter.notes.length == 1'>note</span>
+        <span ng-show='chapter.notes.length != 1'>notes</span>
+
+      </a>
+      |
+      <a href='#/addNote/{{chapter.id}}'>add note</a>
+    </p>
+    <ul class='notes' ng-show='chapter.id == selectedChapterId'>
+      <li ng-repeat='note in chapter.notes | orderBy:"id"'>
+        <div>#{{$index}}</div>
+        <div><a ng-click='onDelete(note.id)'>delete</a></div>
+        <p>{{note.content}}</p>
+      </li>
+    <ul>
+  </li>
+</ul>
+
+<!--
+
+This is quite a bit more complicated than our Hello World view!
+I know there's a lot of AngularJS magic there, which may seem a little daunting.
+Let's just focus on the controller interaction for the time being, and we'll fill in the syntax gap later.
+
+Let's start by thinking about what we're trying to do.
+We want to show all of the chapters of this book, and for the selected chapter, we also want to show any notes the user has created.
+Furthermore, each chapter needs an add note link, and each note needs a delete me link. Let's look at how our implementation works.
+
+We begin with a list item with the ng-repeat annotation.
+Think of this as a ForEach loop in JavaScript.
+It's expecting a list of chapters in our $scope, and hopefully each chapter has a title and a summary,
+because we're showing those on the next two lines.
+
+After that we show a couple of HTML links (with a little AngularJS enhancement, as usual).
+Remember how our routes are set up: the first link will reload ChaptersController
+with chapterId of the current chapter (we're in a loop, so we'll make one of these links for each chapter).
+The second, about five lines later, will take us to AddNoteController with the addNote template, which we'll look at in a moment.
+
+After that, we have another ng-repeat for the notes of the current chapter.
+We're using an ng-show annotation (like an if conditional) to only show the notes
+if the current chapterId in our outer loop matches $scope.selectedChapterId,
+and if we are showing notes, we'll print the ID and content of each one,
+and add a link that will call $scope.onDelete() when clicked.
+
+Again, don't worry about mastering the syntax just yet.
+Instead, focus on how the view gets information from the controller. We expect all of the following:
+
+A list of chapters, each containing a title, summary, and a list of notes. All notes should have an ID and a content property.
+A property called selectedChapterId.
+A function called onDelete().
+
+
+Next, we set selectedChapterId to whatever chapterId we picked up in our URL.
+If there was no chapterId in the URL, this will be undefined, which is fine—we used selectedChapterId in the view to show notes if a chapter was selected.
+If there's no selection, we simply won't display any notes.
+
+Finally, we're giving the view an onDelete() function to run if the user clicks on the delete note link we saw earlier.
+This function uses the window.confirm() method built into JavaScript (remember, AngularJS is an enhancement;
+we still have access to standard JavaScript features in our controller).
+If the user proceeds with the deletion, we use the $location parameter to change our URL and load DeleteNoteController.
+-->

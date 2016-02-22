@@ -1,0 +1,7 @@
+<ul class='notes' ng-show='show'>
+  <li ng-repeat='note in notes | orderBy:orderValue'>
+    <div>#{{$index}}</div>
+    <div><a href ng-click='onDelete(note.id)'>delete</a></div>
+    <p>{{note.content}}</p>
+  </li>
+<ul>

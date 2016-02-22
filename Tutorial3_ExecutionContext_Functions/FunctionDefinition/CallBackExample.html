@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+
+    <script type="text/javascript">
+
+        function conversion (theName,theIndex,theArray){
+            console.log(theIndex + ". " + theName); // 1. Mike, 2. Stacy, 3. Andy, 4. Rick
+
+        }
+
+        var friends = ["Mike", "Stacy", "Andy", "Rick"];
+        //friends.forEach(conversion);
+        friends.forEach(function(theName,theIndex,theArray){
+            console.log(theIndex + ". " + theName); // 1. Mike, 2. Stacy, 3. Andy, 4. Rick
+
+        });
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

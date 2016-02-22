@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Assigning value on the Fly to a Text Field</title></head>
+<body bgcolor="aquamarine">
+<font face=arial size="+1">
+    <form name="form1">
+        Enter your name <input type="text" name="yourname" size=60>
+
+        <p>
+            Click in the box
+            <input type="text" name="message" size=60 onClick="
+        this.value='Greetings and Salutations, '+ document.form1.yourname.value+ '!';">
+
+        <p>
+            <input type="reset">
+
+    </form>
+</font>
+</body>
+</html>

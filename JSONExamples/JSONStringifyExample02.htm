@@ -1,0 +1,67 @@
+
+<!--When the second argument is a function, the behavior is slightly different. The provided function
+receives two arguments: the property key name and the property value. You can look at the key to
+determine what to do with the property. The key is always a string but might be an empty string if a
+value isn’t part of a key-value pair.
+In order to change the serialization of the object, return the value that should be included for that
+key. Keep in mind that returning undefined will result in the property being omitted from the
+result. Here’s an example:-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Stringify Example</title>
+</head>
+<body>
+    <p>This example serializes an object and passes in a filter function.</p>
+    <script type="text/javascript">
+        var book = {
+                        title: "JavaScript",
+                        authors: [
+                            "Vivek"
+                        ],
+                        edition: 3,
+                        year: 2011
+                   };
+
+        var jsonTextFunctionEnabled = JSON.stringify(book, function(key, value){
+            switch(key){
+                case "authors":
+                    return value.join(",");
+                 
+                case "year":
+                    return 5000;
+                    
+                case "edition":
+                    return undefined;
+                    
+                default:
+                    return value;
+            }
+        });
+
+        var jsonText = JSON.stringify(book);
+        alert(jsonText);
+        alert(jsonTextFunctionEnabled);
+
+    </script>
+</body>
+</html>
+
+<!--
+The function filters based on the key.
+The “authors” key is translated from an array to a string,
+the“year” key is set to 5000, and
+the “edition” key is removed altogether by returning undefined.
+
+It’s important to provide a default behavior that returns the passed-in value so that all other values
+are passed through to the result.
+
+The first call to this function actually has key equal to an empty string and the value set to the book object.
+
+The resulting JSON string is:
+{“title”:”Professional JavaScript”,”authors”:”Nicholas C. Zakas”,”year”:5000}
+
+
+
+-->

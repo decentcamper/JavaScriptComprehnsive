@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<script>
+    function logFunction(){
+        console.log("Properties In the Object Are: ")
+        for(var v in this){
+            console.log("Keys are : " + v);
+            console.log("Values are : " + this[v]);
+
+        }
+
+    }
+
+    var myRoom1 = { facebook: "https://www.facebook.com/" ,
+        linkedIn: "https://www.linkedIn.com/",
+        kahoot: "https://www.kahoot.it/"
+    };
+
+
+    logFunction.call(myRoom1);
+
+
+</script>
+</body>
+</html>

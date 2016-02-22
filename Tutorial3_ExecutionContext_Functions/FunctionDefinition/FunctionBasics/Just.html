@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function sum(num1, num2){
+            return this.num1 + this.num2;
+
+            return num1 + num2;
+
+        }
+
+        var obj =  {
+            num1 : 2,
+            num2 :3
+
+        }
+
+        sum.call(obj,1,2);
+
+
+        obj.m = sum;
+        obj.m();
+        obj.m = null;
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

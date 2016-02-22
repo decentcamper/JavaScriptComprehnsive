@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--The hasPlugin() example accepts a single argument: the name of a plug-in to detect. The fi rst step-->
+    <!--is to convert that name to lowercase for easier comparison. Next, the plugins array is iterated over,-->
+    <!--and each name property is checked via indexOf() to see if the passed-in name appears somewhere-->
+    <!--in that string. This comparison is done in all lowercase to avoid casing errors. The argument should-->
+    <!--be as specific as possible to avoid confusion. Strings such as “Flash” and “QuickTime” are unique-->
+    <!--enough that there should be little confusion. This method works for detecting plug-ins in Firefox,-->
+    <!--Safari, Opera, and Chrome.-->
+    <title>Plugin Detection Example</title>
+</head>
+<body>
+    <script type="text/javascript">
+    
+        //plugin detection - doesn't work in IE
+        function hasPlugin(name){
+            name = name.toLowerCase();
+            for (var i=0; i < navigator.mimeTypes.length; i++){
+                if (navigator.mimeTypes[i].description.toLowerCase().indexOf(name) > -1){
+                    return true;
+                }
+            }
+        
+            return false;
+        }
+        
+        //detect flash
+        alert(hasPlugin("Shockwave Flash"));
+        
+        //detect Google voice and video chat
+        alert(hasPlugin("Google voice and video chat"));
+        
+        //detect MPEG-4 media
+        alert(hasPlugin("MPEG-4 media"));
+    </script>
+</body>
+</html>

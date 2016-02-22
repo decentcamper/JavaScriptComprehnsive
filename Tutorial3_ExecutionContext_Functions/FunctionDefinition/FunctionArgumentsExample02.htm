@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--In this code, an object is created and stored in the variable person. This object is then passed into-->
+    <!--the setName() method, where it is copied into obj. Inside the function, obj and person both-->
+    <!--point to the same object. The result is that obj is accessing an object by reference, even though it-->
+    <!--was passed into the function by value. When the name property is set on obj inside the function,-->
+    <!--this change is reflected outside the function, because the object that it points to exists globally on-->
+    <!--the heap. Many developers incorrectly assume that when a local change to an object is reflected-->
+    <!--globally, that means an argument was passed by reference-->
+
+    <title>Function Arguments Example 2</title>
+    <script type="text/javascript">
+        function setName(obj) {
+            obj.name = "Vivek";
+        }
+        
+        var person = new Object();
+        setName(person);
+        alert(person.name);    //"Nicholas"
+
+
+
+       function setNameToProvePassedByValue(obj) {
+          obj.name = "Vivek";
+          obj = new Object();
+           obj.name = "Vik";
+       }
+//        var person = new Object();
+//        setName(person);
+//        alert(person.name); //”Nicholas”
+
+//        The only change between this example and the previous one are two lines added to setName() that
+//        redefine obj as a new object with a different name. When person is passed into setName(), its name
+//        property is set to “Nicholas”. Then the variable obj is set to be a new object and its name property
+//        is set to “Greg”. If person were passed by reference, then person would automatically be changed to
+//        point to the object whose name is “Greg”. However, when person.name is accessed again, its value
+//        is “Nicholas”, indicating that the original reference remained intact even though the argument’s
+//        value changed inside the function. When obj is overwritten inside the function, it becomes a pointer
+//        to a local object. That local object is destroyed as soon as the function finishes executing.
+    </script>
+</head>
+<body>
+
+</body>
+</html>

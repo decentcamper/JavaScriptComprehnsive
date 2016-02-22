@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>getElementsByClassName() Example</title>
+    <style>
+        .tag {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Presents</h1>
+    <p><strong class="tag"> Just One</strong></p>
+    <h2>Header Level 2</h2>
+    <ol>
+       <li>List Item 1</li>
+       <li class="tag">List Item 2</li>
+    </ol>
+    <h3>Header Level 3</h3>
+    <ul>
+       <li class="tag">List Item 3</li>
+       <li>List Item 3</li>
+    </ul>
+    <script type="text/javascript">
+        function changeElementColor(){
+            if (document.getElementsByClassName){
+                //highlight all tags with yellow color
+                var tags = document.getElementsByClassName("tag");
+                for (var i=0, len=tags.length; i < len; i++){
+                    tags[i].style.backgroundColor = "yellow";
+                }
+            } else {
+                alert("getElementsByClassName() is not supported in this browser.");
+            }
+
+        }
+    </script>
+    <input type="button" value="Change Element Color" onclick="changeElementColor()">
+</body>
+</html>

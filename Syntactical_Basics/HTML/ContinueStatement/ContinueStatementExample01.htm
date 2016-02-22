@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+//    Here, the alert displays 8, the number of times the loop has been executed. When i reaches a value
+//    of 5, the loop is exited before num is incremented, but execution continues with the next iteration,
+//    when the value is 6. The loop then continues until its natural completion, when i is 10. The
+//    fi nal value of num is 8 instead of 9, because one increment didn’t occur because of the continue
+//    statement.
+    <title>Continue Statement Example 1</title>
+    <script type="text/javascript">
+        var num = 0;
+        
+        for (var i=1; i < 10; i++) {
+            if (i % 5 == 0) {
+                continue;
+            }
+            num++;
+        }
+
+        alert(num);
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c0356f3e-3a23-4b35-8a05-6db6089085fc" name="Default" comment="" />
+    <ignored path="Objects.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Objects" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/George.js" />
+        <option value="$PROJECT_DIR$/ObjectsExample/js_object/object-function/js/Gallery.js" />
+        <option value="$PROJECT_DIR$/BonnieProblem/Gallery.js" />
+        <option value="$PROJECT_DIR$/ArrayTypeExample06.htm" />
+        <option value="$PROJECT_DIR$/ArrayTypeExample02.htm" />
+        <option value="$PROJECT_DIR$/ArrayTypeExample03.htm" />
+        <option value="$PROJECT_DIR$/ArrayTypeExample05.htm" />
+        <option value="$PROJECT_DIR$/ArrayTypeExample09.htm" />
+        <option value="$PROJECT_DIR$/ArrayTypeExample11.htm" />
+        <option value="$PROJECT_DIR$/ArrayTypeExample14.htm" />
+        <option value="$PROJECT_DIR$/ArrayTypeConcatExample01.htm" />
+        <option value="$PROJECT_DIR$/ArrayIndexOfExample01.htm" />
+        <option value="$PROJECT_DIR$/ArrayEveryAndSomeExample01.htm" />
+        <option value="$PROJECT_DIR$/ArrayMapExample01.htm" />
+        <option value="$PROJECT_DIR$/PrototypeExample.html" />
+        <option value="$PROJECT_DIR$/ArrayFilterExample01.htm" />
+        <option value="$PROJECT_DIR$/Test.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="17" />
+    <option name="y" value="22" />
+    <option name="width" value="1917" />
+    <option name="height" value="978" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Syntactical_Basics" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="recentsLimit" value="5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/BonnieProblem" />
+      <recent name="$PROJECT_DIR$/ObjectsExample" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c0356f3e-3a23-4b35-8a05-6db6089085fc" name="Default" comment="" />
+      <created>1361909035816</created>
+      <updated>1361909035816</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="17" y="22" width="1917" height="978" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2509225" sideWeight="0.9817008" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ArrayTypeExample14.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="39" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeExample13.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeExample15.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayIndexOfExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="46" selection-start="262" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayEveryAndSomeExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="42" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayFilterExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="4" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="69" selection-start="356" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="16800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeConcatExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeExample14.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="39" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeExample13.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeExample15.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayIndexOfExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="46" selection-start="262" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayEveryAndSomeExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="42" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayFilterExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="53" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayMapExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="495" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PrototypeChainingExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PrototypeExample.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="585" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeConcatExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeExample04.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="47" selection-start="374" selection-end="413" vertical-scroll-proportion="-6.617647" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeExample05.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="21" selection-start="467" selection-end="467" vertical-scroll-proportion="-7.352941" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeExample06.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="29" selection-start="289" selection-end="310" vertical-scroll-proportion="-5.882353" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeExample07.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="35" selection-start="522" selection-end="522" vertical-scroll-proportion="-5.882353" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeExample09.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="461" selection-end="461" vertical-scroll-proportion="-7.352941" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeExample11.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="30" selection-start="884" selection-end="884" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeConcatExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PrototypeExample.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="34" selection-start="676" selection-end="676" vertical-scroll-proportion="0.44061303" vertical-offset="0" max-vertical-offset="783" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PrototypeChainingExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayMapExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="875" selection-end="875" vertical-scroll-proportion="0.5024814" vertical-offset="0" max-vertical-offset="806" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="69" selection-start="356" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="16800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayFilterExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="4" selection-start="360" selection-end="360" vertical-scroll-proportion="0.19736843" vertical-offset="0" max-vertical-offset="836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayEveryAndSomeExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="42" selection-start="610" selection-end="610" vertical-scroll-proportion="0.215311" vertical-offset="0" max-vertical-offset="836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayIndexOfExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="46" selection-start="262" selection-end="679" vertical-scroll-proportion="0.41267943" vertical-offset="0" max-vertical-offset="836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeExample15.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="491" selection-end="491" vertical-scroll-proportion="0.3409091" vertical-offset="0" max-vertical-offset="836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeExample13.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="526" selection-end="526" vertical-scroll-proportion="0.19736843" vertical-offset="0" max-vertical-offset="836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayTypeExample14.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="39" selection-start="741" selection-end="741" vertical-scroll-proportion="0.25119618" vertical-offset="0" max-vertical-offset="836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Geocoding Revisted</title>
+    <link type="text/css" rel="stylesheet" href="listing_09_03.css" />
+    <script type="text/javascript" 
+           src="http://maps.google.com/maps?file=api&amp;v=2.124&amp;key=ABQIAAAAN_IKAOv-fz9s2G9ZOihkhRQRiYyMmFOXXgCIe1BMmHtWUkPqiRROh48Y3J93_SbAzngd63KZMurFqQ"></script>
+    <script type="text/javascript" 
+            src="http://gmaps-utility-library.googlecode.com/svn/trunk/mapiconmaker/release/src/mapiconmaker.js"></script>
+    <script type="text/javascript" src="listing_09_06.js"></script>
+  </head>
+  <body onload="loadMap()" onunload="GUnload()">
+    <div id="map"></div>
+    <h1>
+      Find Your Location
+    </h1>
+    <form method="post">
+      <p>
+        <label for="address">Address:</label>
+        <textarea name="address" id="address"></textarea>
+      </p>
+      <p>
+        <input type="button" value="Look Up Address"
+               onclick="geocode(); return false;" />
+      </p>
+      <p>
+        <input type="hidden" name="latitude" id="latitude" />
+        <input type="hidden" name="longitude" id="longitude" />
+        <input type="submit" value="Save" />
+      </p>
+    </form>
+  </body>
+</html>

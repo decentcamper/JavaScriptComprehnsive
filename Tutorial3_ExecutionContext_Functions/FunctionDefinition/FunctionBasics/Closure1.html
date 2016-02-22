@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script type="application/javascript">
+    function outer(passed) {
+        var hello = "hi";
+        return function inner() {
+            return hello + " " + passed;
+        }
+    }
+
+    // Create and use the closureo
+    var test = outer("Mark");
+    var test1 = outer("Vik");
+    alert( test() );
+    alert( test1() );
+
+
+
+
+
+</script>
+</body>
+</html>

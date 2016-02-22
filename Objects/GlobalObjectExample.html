@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <!--If your host environment is the web browser,
+    the global object is called window.-->
+    <!--As an illustration, you can try declaring a global variable, outside of any-->
+    <!--function, such as:-->
+    <!-->>> var a = 1;-->
+    <!--Then you can access this global variable in various ways:-->
+    <!--As a variable a-->
+    <!--As a property of the global object, � � for example� window['a'] or window.a-->
+    <!--Let's go back to the case where you define a constructor function and call it
+    without the new operator. -->
+    <!--In such cases this refers to the global
+    object and all properties set with this become properties of window.-->
+
+
+    <script type="text/javascript">
+
+
+        function hero(name,age){
+            this.name = name;
+            this.age = age;
+            this.sayFunction = function(){
+                return "Hi there " + this.name + " Sorry but you age is " + this.age + " already";
+
+            };
+        }
+
+
+
+
+
+
+
+//        Invoke a constructor function and calling it without new, returns "undefined":
+
+
+        var h =   hero("Vivek" , 29);
+        //var h =   hero("Vivek" , 29);
+        alert(typeof h); // undefined
+        //alert(typeof h.age); // undefined
+
+//        Because you had "this" inside Hero, a global variable (a property of the global object)
+//        called name was created.
+          alert(name);
+          alert(window.name);
+
+
+        //If you call the same constructor function but this time using new,
+        // then a new object is returned and this refers to it.
+        //var h2= new hero("UCSC" , 55);
+       // alert(typeof h2);
+
+        //alert(typeof h2.age);
+
+
+        //alert(window.sayFunction());
+
+
+        //alert(h2.sayFunction());
+
+        //alert(h2.constructor);
+
+        //var h3 = new h2.constructor("University",88);
+
+        //alert(h3.sayFunction());
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

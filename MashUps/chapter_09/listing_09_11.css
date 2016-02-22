@@ -1,0 +1,38 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 90%;
+}
+
+#map {
+  width: 70%;
+  height: 100%;
+}
+
+#sidebar {
+  position: absolute;
+  left: 70%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  padding: 1em;
+}
+
+h1 {
+  margin: 0;
+  font-size: 100%;
+}
+
+ul {
+  padding-left: 1em;
+}
+li {
+  padding-left: 0em;
+}
+

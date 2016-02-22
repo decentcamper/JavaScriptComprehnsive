@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+    <script type="application/javascript" src="js/AssigningFuncAsEventHandler.js"></script>
+</head>
+<body onload="assign()" style="background-color: #9acd32">
+<pre class="prettyprint">
+<p>
+    If we execute doSomething() without any more preparation the this keyword refers to the window and the
+    function tries to change the style.color of the window.
+    Since the window doesnot have a style object the function fails miserably and produces JavaScript errors.
+    Copying :
+        So if we want to use this to its full extent we have to take care that the function that uses it is "owned" by the correct HTML element.
+        In other words, we have to copy the function to our onclick property:
+
+        element.onclick = doSomething;
+
+        The function is copied in its entirety to the onclick property (which now becomes a method).
+        So if the event handler is executed this refers to the HTML element and its color is changed.
+
+    Referring
+
+    However, if you use inline event registration
+
+    <!--<element onclick="doSomet
+
+        you do not copy the function! Instead, you refer to it, and the difference is crucial.
+        The onclick property does not contain the actual function, but merely a function call:
+
+        doSomething();
+
+        So it says “Go to doSomething() and execute it.” When we arrive at doSomething() the this keyword once again refers to the global window object and the function returns error messages.
+
+
+
+</p>
+</pre>-->
+
+
+<div id="myDiv" style="background-color:#FFD700;height:200px;width:1000px;" title="A DIV"></div>
+<button id="myButtonInline" onclick="changeColor()" style="background-color: #6a59f6" >Try Me My Button Inline</button>
+<button id="myButton" style="background-color: #000066" >Try Me Button Function Copy</button>
+<button id="myButtonDiff" onclick="theDifference()"  >Try Me For Diff</button>
+
+
+
+</body>
+</html>

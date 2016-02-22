@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Type Example 11</title>
+    <!--This example creates an array of three colors using the push() method.
+    The highlighted line shows-->
+    <!--the shift() method being used to retrieve the fi rst item in the array,
+    which is “red”. With that item-->
+    <!--removed, “green” is moved into the fi rst position
+    and “black” is moved into the second, leaving the-->
+    <!--array with two items.-->
+    <script type="text/javascript">
+        var colors = new Array();                      //create an array
+        var count = colors.push("blue","white","red");       //push three items
+        alert(count);  //3
+        
+        count = colors.push("black");                  //push another item on
+        alert(count);  //4
+        
+        var item = colors.shift();                     //get the first item
+        alert(item);   //"blue"
+        alert(colors.length);  //3
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

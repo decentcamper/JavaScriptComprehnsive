@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Here, two event handlers are added to the button. The event handlers fi re in the order in which-->
+    <!--they were added, so the fi rst alert displays the element’s ID and the second displays the message-->
+    <!--“Hello world!”-->
+    <title>DOM Level 2 Event Handler Example</title>
+</head>
+<body>
+    <input type="button" id="myBtn" value="Click Me" />
+    <p>This example won't work in Internet Explorer.</p>
+    <script type="text/javascript">
+        var btn = document.getElementById("myBtn");
+        btn.addEventListener("click", function(){
+            alert(this.id);
+        }, false);
+        btn.addEventListener("click", function(){
+            alert("Hello world!");
+        }, false);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+    var exampleJSON = {   "id":"itemGuitar",
+    "price":5695.99,
+    "urls":["http:\/\/www.thewho.com\/","http:\/\/en.wikipedia.org\/wiki\/Pete_Townshend"],
+    "description":"Pete Townshend once played this guitar while his own axe was in the shop " +
+"having bits of drumkit removed from it."}
+
+
+    var jsObject = JSON.parse(exampleJSON);
+
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--This example uses the ternary operator to determine if the screenLeft and screenTop properties-->
+    <!--exist. If they do (which is the case in Internet Explorer, Safari, Opera, and Chrome), they are used.-->
+    <!--If they don’t exist (as in Firefox), screenX and screenY are used.-->
+    <title>Window Position Example</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var leftPos = (typeof window.screenLeft == "number") ? 
+                          window.screenLeft : window.screenX;
+        var topPos = (typeof window.screenTop == "number") ? 
+                          window.screenTop : window.screenY;
+
+        alert("Left: " + leftPos);
+        alert("Top: " + topPos);
+    </script>
+</body>
+</html>

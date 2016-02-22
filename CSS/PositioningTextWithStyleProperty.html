@@ -1,0 +1,42 @@
+<html>
+<head><title>Positioning</title>
+    <!--By assigning a position to the style property it is possible to place an element in-->
+    <!--different sections of the page.-->
+    <!--In the following example, by assigning positions, the text is moved after the-->
+    <!--document has been loaded.-->
+    <script language="javascript">
+        var div1, div2, div3;
+        function init() {
+            div1 = document.getElementById("first");
+            div2 = document.getElementById("second");
+            div3 = document.getElementById("third");
+        }
+        function movePosition() {
+
+            div1.style.left = 50;
+            div1.style.top = 150;
+            div2.style.left = 100;
+            div2.style.top = 100;
+            div3.style.left = 150;
+            div3.style.top = 50;
+        }
+        function moveAgain() {
+            div1.style.left = 10;
+            div1.style.top = 75;
+            div2.style.left = 50;
+            div2.style.top = 150;
+            div3.style.left = 90;
+            div3.style.top = 225;
+        }
+    </script>
+</head>
+<body onLoad="init()">
+<font size="+2" color="white">
+    <div id="first" style="position:absolute; top:50px;background-color:blue;" >one</div>
+    <div id="second" style="position:absolute; top:100px;background-color:aqua">two</div>
+    <div id="third" style="position:absolute; top:150px;background-color:brown">three</div>
+    <form>
+        <input type="button" value="move text" onClick="movePosition()">
+        <input type="button" value="move text" onClick="moveAgain()">
+    </form></body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+</head>
+<body>
+<form>
+    <div style="opacity:0.5;position:absolute;left:50px;height:150px;background-color:#40B3DF">
+    <input type="button" id="button1" value="HTML_EVENT_HANDLER" onclick="alert('HTMLEventHandler')">
+    <input type="button" id= "button2" value="DOM_LEVEL_0" >
+    <input type="button" id="button3" value="DOM_LEVEL_1">
+
+    </div>
+
+
+</form>
+
+<script type="text/javascript">
+    window.onload = function(){
+        document.getElementById("button2").onclick=clicked2;
+        document.getElementById("button3").addEventListener('click',clicked);
+    }
+    function clicked(event){
+        var target = event.target;
+        alert('DOMLevel1 Event Handler Assignment the button clicked is ' + this.id);
+    }
+    function clicked2(){
+        alert('DOMLevel0 Event Handler Assignment the button clicked is ' + this.id);
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--The splice() method always returns an array that contains any items that were removed from-->
+    <!--the array (or an empty array if no items were removed). -->
+    <!--This example begins with the colors array containing three items. When splice is called the fi rst-->
+    <!--time, it simply removes the fi rst item, leaving colors with the items “green” and “blue”. The-->
+    <!--second time splice() is called, it inserts two items at position 1, resulting in colors containing-->
+    <!--“green”, “yellow”, “orange”, and “blue”. No items are removed at this point, so an empty array-->
+    <!--is returned. The last time splice() is called, it removes one item, beginning in position 1, and-->
+    <!--inserts “red” and “purple”. After all of this code has been executed, the colors array contains-->
+    <!--“green”, “red”, “purple”, “orange”, and “blue”.-->
+    <title>Array Type Splice Example</title>
+    <script type="text/javascript">
+    
+        var colors = ["red", "green", "blue"];
+        var removed = colors.splice(0,1);              //remove the first item
+        alert(colors);     //green,blue
+        alert(removed);    //red - one item array
+        
+        removed = colors.splice(1, 0, "yellow", "orange");  //insert two items at position 1
+        alert(colors);     //green,yellow,orange,blue
+        alert(removed);    //empty array
+
+        removed = colors.splice(1, 1, "red", "purple");    //insert two values, remove one
+        alert(colors);     //green,red,purple,orange,blue
+        alert(removed);    //yellow - one item array
+        
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+    <title>Function Example 5</title>
+
+    <script type="text/javascript">
+
+        function sayHiNamedArguments(name,solicitation) {
+            alert("Hello " + name + ", " + solicitation);
+
+        }
+
+        function sayHiWithoutNamedArguments(){
+
+            alert("Hello " + arguments[0] + ", " + arguments[1]);
+        }
+
+
+    </script>
+
+
+</head>
+<body>
+
+<pre class="prettyprint">
+
+     function sayHiNamedArguments(name,solicitation) {
+            alert("Hello " + name + ", " + solicitation);
+
+        }
+
+
+The arguments object acts like an array (though it isn’t an instance of Array) in that you can
+    access each argument using bracket notation (the fi rst argument is arguments[0], the second is
+    arguments[1], and so on) and determine how many arguments were passed in by using the length
+    property. In the previous example, the sayHi() function’s first argument is named name. The same
+    value can be accessed by referencing arguments[0]. Therefore, the function can be rewritten
+    without naming the arguments explicitly, like this:
+
+    function sayHiWithoutNamedArguments(){
+
+            alert("Hello " + arguments[0] + ", " + arguments[1]);
+        }
+
+    In this rewritten version of the function, there are no named arguments. The name and message
+    arguments have been removed, yet the function will behave appropriately. This illustrates an
+    important point about functions in ECMAScript: named arguments are a convenience, not a
+    necessity. Unlike in other languages, naming your arguments in ECMAScript does not create a
+    function signature that must be matched later on; there is no validation against named arguments.
+    
+</pre>
+
+<button onclick="sayHiNamedArguments('Vivek', 'How are you today')"> Try With named Arguments </button>
+<button onclick="sayHiWithoutNamedArguments('Vivek', 'How are you today')"> Try Without named Arguments </button>
+
+</body>
+</html>

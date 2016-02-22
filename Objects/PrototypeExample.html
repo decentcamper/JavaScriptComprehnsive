@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function Gadget (name, color){
+               this.name= name;
+               this.color = color;
+               this.getInfo = function(){
+
+                   return "I am gadget with name " + this.name + " and color :" + this.color;
+               }
+        }
+
+        var gadget1 = new Gadget("PS3", "back");
+
+        Gadget.prototype.brand = "Sony";
+        Gadget.prototype.sayInfo1 = function (){
+            return "I am gadget with name " + this.name + " and color :" + this.color +
+                    "brand : " + this.brand;
+
+
+        }
+        alert(gadget1.sayInfo1());
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

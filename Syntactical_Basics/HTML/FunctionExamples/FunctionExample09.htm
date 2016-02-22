@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Example 9</title>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+    <script type="text/javascript">
+        function doAdd(num1, num2) {
+            //if(arguments.length == 1) {
+                arguments[1] = 10;
+            //}
+            alert(arguments[0] + num2);
+        }
+
+        doAdd(10, 20);        //20
+        doAdd(30, 20);    //50
+
+    </script>
+</head>
+<body>
+
+<pre class="prettyprint">
+This version of doAdd() always overwrites the second argument with a value of 10. Because values
+in the arguments object are automatically refl ected by the corresponding named arguments, the
+change to arguments[1] also changes the value of num2, so both have a value of 10.<br>
+This doesn’t
+mean that both access the same memory space, though; their memory spaces are separate but
+happen to be kept in sync. This effect goes only one way: changing the named argument does not
+result in a change to the corresponding value in arguments. Another thing to keep in mind: if
+only one argument is passed in, then setting arguments[1] to a value will not be refl ected by the
+named argument. This is because the length of the arguments object is set based on the number of
+arguments passed in, not the number of named arguments listed for the function.
+Any named argument that is not passed into the function is automatically assigned the value
+undefined. This is akin to defi ning a variable without initializing it. For example, if only one
+argument is passed into the doAdd() function, then num2 has a value of undefined.
+
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Execution Context Example 4</title>
+
+
+</head>
+<body>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+<script type="text/javascript" src="js/ExecutionContext04.js"></script>
+<pre class="prettyprint">
+<p> Here, the function add() defines a local variable named sum that contains the result of an addition
+    operation. This value is returned as the function value, but the variable sum isn’t accessible outside
+    the function.
+</p>
+
+    function add(num1, num2) {
+            var sum = num1 + num2;
+            return sum;
+        }
+        
+       var result = add(10, 20);  //30
+        alert(result);
+        alert(sum);      
+
+</pre>
+
+</body>
+</html>

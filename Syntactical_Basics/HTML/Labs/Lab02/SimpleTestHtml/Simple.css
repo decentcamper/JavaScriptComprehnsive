@@ -1,0 +1,31 @@
+#container{
+    margin:auto;
+    width:600px;
+    background-color:#fd5;
+    border:2px solid #e80;
+}
+#nav{
+    width:150px;
+}
+#result{
+    width:400px;
+}
+#nav a{
+    display:block;
+    float:left;
+    width:144px;
+    background-color:#eee;
+    border:3px solid #555;
+    text-align:center;
+    text-decoration:none;
+    color:#000;
+}
+#nav a:hover{
+    background-color:#fb0;
+}
+.clear{
+    clear:both;
+}
+br{
+    display:none;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+//    In this code, the for loop increments the variable i from 1 to 10. In the body of loop, an if
+//    statement checks to see if the value of i is evenly divisible by 5 (using the modulus operator).
+    If so,
+//    the break statement is executed and the loop is exited.
+    The num variable starts out at 0 and indicates
+
+//    the number of times the loop has been executed.
+    After the break statement has been hit, the next
+//    line of code to be executed is the alert, which displays 4.
+    So the number of times the loop has been
+//    executed is four because when i equals 5, the break statement causes the loop to
+    be exited before
+//    num can be incremented.
+    <title>Break Statement Example 1</title>
+    <script type="text/javascript">
+        var num = 0;
+        
+        for (var i=1; i < 10; i++) {
+            if (i % 5 == 0) {
+                break;
+            }
+            num++;
+        }
+        
+        alert(num);    //4
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

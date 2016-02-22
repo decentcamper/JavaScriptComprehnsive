@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Building Out Your Map Page</title>
+    <link type="text/css" rel="stylesheet" href="listing_04_09.css" />
+    <script type="text/javascript" 
+            src="http://maps.google.com/maps?file=api&amp;v=2.124&amp;key=ABQIAAAAN_IKAOv-fz9s2G9ZOihkhRQRiYyMmFOXXgCIe1BMmHtWUkPqiRROh48Y3J93_SbAzngd63KZMurFqQ"></script>
+    <script type="text/javascript" src="listing_04_10.js"></script>
+  </head>
+  <body onload="loadMap()" onunload="GUnload()">
+    <div id="map"></div>
+    <div id="sidebar">
+      <h1>Arches</h1>
+      <h2>National Park Visitor Information</h2>
+      <p>
+        <img width="20" height="34" alt="White" src="../markers/white.png" />
+        <a href="#" onclick="GEvent.trigger(entranceMarker, 'click'); return false">
+          Visitor Center
+        </a>
+      </p>
+      <h3>Hiking Trails</h3>
+      <ul>
+        <li>
+          <img width="20" height="34" alt="Black" src="../markers/black.png" />
+          <a href="#" 
+             onclick="GEvent.trigger(delicateArchMarker, 'click'); return false">
+            Delicate Arch
+          </a>
+        </li>
+        <li>
+          <img width="20" height="34" alt="Black" src="../markers/black.png" />
+          <a href="#" 
+             onclick="GEvent.trigger(windowsMarker, 'click'); return false">
+            The Windows
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div id="infowindow_content">
+      <div id="delicate_tab_details" class="details_tab">
+        <h3>Delicate Arch trail</h3>
+        <dl>
+          <dt>Distance</dt><dd>3 miles (4.8 km) round trip</dd>
+          <dt>Time</dt><dd>2 to 3 hours</dd>
+          <dt>Difficulty</dt><dd>Moderate</dd>
+        </dl>
+        <p>
+          One of the classic hikes of any national park, this scramble across 
+          exposed slickrock leads to an open sandstone bowl with stunning views of
+          the freestanding Delicate Arch and the La Sal Mountains beyond.
+          Especially fabulous at sunset!
+        </p>
+        <p>
+          Carry at least 1 quart of water per person. Good balance is a plus as
+          much of the hike is on sloping sandstone.
+        </p>
+      </div>
+      <div id="delicate_tab_photo" class="details_tab">
+        <h3>Delicate Arch at Sunset</h3>
+        <img width="300" height="225" alt="Delicate Arch" src="delicate_arch.jpg" />
+      </div>
+      
+      <div id="windows_tab_details" class="details_tab">
+        <h3>The Windows trail</h3>
+        <dl>
+          <dt>Distance</dt><dd>1 mile (1.6 km) round trip</dd>
+          <dt>Time</dt><dd>&frac12; to 1 hour</dd>
+          <dt>Difficulty</dt><dd>Easy</dd>
+        </dl>
+        <p>
+          A fairly short, level walk that takes in several major arches, also
+          providing good views across the singular landscape of the park. The same
+          parking area gives access to the short trail to Double Arch.
+        </p>
+        <p>
+          Suitable for all abilities. Initial section is wheelchair-accessible.
+        </p>
+      </div>
+      <div id="windows_tab_photo" class="details_tab">
+        <h3>North Window Arch</h3>
+        <img width="300" height="225" alt="North Window" src="window_arch.jpg" />
+      </div>
+    </div>
+  </body>
+</html>

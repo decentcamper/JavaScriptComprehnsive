@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Open Example 2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var win = null;
+                function openNewWindow(url, tabName){
+                    win=   window.open(url, tabName,
+                    'width=800,height=900,left=110,top=100');
+        }
+
+
+       //window.open("http://www.wrox.com");
+    </script>
+    <p>This will open a new window/tab:
+    <input type="button" value="Go to Yahoo.com" onclick="openNewWindow('http://www.yahoo.com/', 'yahooWindow')" /></p>
+    <input type="button" value="Go to Wrox.com" onclick="openNewWindow('http://www.wrox.com/', 'wroxWindow')" /></p>
+
+ 
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--In this code, an array is created for use as a stack
+    (note that there’s no special code required to make-->
+    <!--this work; push() and pop() are default methods on arrays).
+    First, two strings are pushed onto the-->
+    <!--end of the array using push(), and the result is stored in the variable
+    count (which gets the value of-->
+    <!--2). Then, another value is pushed on, and the result is once again
+    stored in count. Because there are-->
+    <!--now three items in the array, push() returns 3.
+    When pop() is called, it returns the last item in the-->
+    <!--array, which is the string “black”. The array then has only two items left.-->
+    <title>Array Type Example 9</title>
+    <script type="text/javascript">
+        var colors = new Array();                      //create an array
+        var count = colors.push("red", "green");       //push two items
+        alert(count);  //2
+        
+        count = colors.push("black");                  //push another item on
+        alert(count);  //3
+        
+        var item = colors.pop();                       //get the last item
+        alert(item);   //"black"
+
+        alert(colors.length);  //2
+    </script>
+</head>
+<body>
+
+</body>
+</html>

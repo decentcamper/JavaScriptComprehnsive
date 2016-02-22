@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--You may have noticed that JSON.stringify() also inserts new lines into the JSON string for easier-->
+    <!--reading. This happens for all valid indentation argument values. (Indentation without new lines-->
+    <!--isn’t very useful.) The maximum numeric indentation value is 10; passing in a value larger than 10-->
+    <!--automatically sets the value to 10.-->
+    <title>JSON Stringify Example</title>
+</head>
+<body>
+    <p>This example serializes an object and passes in a filter function.</p>
+    <script type="text/javascript">
+        var book = {
+                        title: "Professional JavaScript",
+                        authors: [
+                            "Vivek"
+                        ],
+                        edition: 3,
+                        year: 2011
+                   };
+
+        var jsonText = JSON.stringify(book, null, 3);
+        alert(jsonText);
+
+    </script>
+</body>
+</html>

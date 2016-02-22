@@ -1,0 +1,24 @@
+
+<ul>
+  <li ng-repeat='chapter in chapters | orderBy:"title"'>
+    <h2 id='$id'>{{chapter.title}}</h2>
+    <p>{{chapter.summary}}</p>
+    <p>
+      <a href='#/chapter/{{chapter.id}}'>
+        {{chapter.notes.length}}
+        <ng-pluralize count='chapter.notes.length'
+          when='{"1": "note", "other": "notes"}'>
+        </ng-pluralize>
+      </a>
+      |
+      <a href='#/addNote/{{chapter.id}}'>add note</a>
+    </p>
+    <ul class='notes' ng-show='chapter.id == selectedChapterId'>
+      <li ng-repeat='note in chapter.notes | orderBy:"id"' ng-class-even='"even"' ng-class-odd='"odd"'>
+        <div>#{{$index}}</div>
+        <div><a ng-click='onDelete(note.id)'>delete</a></div>
+        <p>{{note.content}}</p>
+      </li>
+    <ul>
+  </li>
+</ul>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enumerating Properties</title>
+    <script type="text/javascript">
+        function Gadget(name, color) {
+            this.name = name;
+            this.color = color;
+            this.someMethod = function(){return 1;}
+        }
+        Gadget.prototype.pric = 100;
+        Gadget.prototype.rating = 3;
+
+
+        //Creating a new toy object
+
+        var newtoy = new Gadget('webcam', 'black');
+
+        //Now if you loop using a fo
+        // including those that come from the prototype:
+        function enumerateAllProperties(){
+            alert("This is going to enumerate all the properties")
+            for (var prop in newtoy) {
+                alert(prop + ' = ' + newtoy[prop]);
+            }
+        }
+
+        //If you want to distinguish between the object's own properties versus the
+        // prototype's properties, use hasOwnProperty().
+        function checkProperty(prop){
+            alert(newtoy.hasOwnProperty(prop));
+
+        }
+
+        function justShowOwnProperties(){
+            alert("This is going to enumerate only the object properties")
+            for (var prop in newtoy) {
+                if (newtoy.hasOwnProperty(prop)) {
+                    alert(prop + '=' + newtoy[prop]);
+                }
+            }
+
+        }
+
+        //This method returns true for own properties that are not built-in
+        function showAllEnumerableProperties(){
+            alert("This is going to enumerate only the object's enumerable properties")
+            for (var prop in newtoy) {
+                if (newtoy.propertyIsEnumerable(prop)) {
+                    alert(prop + '=' + newtoy[prop]);
+                }
+            }
+
+
+        }
+
+        //This method returns true for own properties that are built-in
+        function showAllNonEnumerableProperties(){
+            alert("This is going to enumerate only the object's non enumerable properties")
+            for (var prop in newtoy) {
+                if (!(newtoy.propertyIsEnumerable(prop))) {
+                    alert(prop + '=' + newtoy[prop]);
+                }
+            }
+
+
+        }
+        alert(newtoy.propertyIsEnumerable('name'));
+
+    </script>
+</head>
+<body>
+<input type="button" value="Enumerate All Properties" onclick="enumerateAllProperties()">
+<input type="button" value="Does var new Toy has own Property : name"
+       onclick="checkProperty('name')">
+<input type="button" value="Does var new Toy has own Property : price" onclick="checkProperty('price')">
+<input type="button" value="Enumerate Only Own Properties" onclick="justShowOwnProperties()">
+<input type="button" value="Enumerate Only Enumerable Properties" onclick="showAllEnumerableProperties()">
+<input type="button" value="Enumerate Only Non Enumerable Properties" onclick="showAllNonEnumerableProperties()">
+</body>
+</html>

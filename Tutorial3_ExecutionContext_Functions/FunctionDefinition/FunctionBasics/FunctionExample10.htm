@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+//
+//    Here, the function addSomeNumber() is defi ned twice. The fi rst version of the function adds 100
+//    to the argument, and the second adds 200. When the last line is called, it returns 300 because the
+//    second function has overwritten the fi rst.
+//    As mentioned previously, it’s possible to simulate overloading of methods by checking the type and
+//    number of arguments that have been passed into a function and then reacting accordingly.
+
+
+    <title>Function Example 10</title>
+    <script type="text/javascript">
+        function addSomeNumber(num){
+            return num + 100;
+        }
+        
+        function addSomeNumber(num) {
+            return num + 200;
+        }
+        
+        var result = addSomeNumber(100);    //300
+        alert(result);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

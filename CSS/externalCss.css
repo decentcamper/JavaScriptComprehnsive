@@ -1,0 +1,17 @@
+body { background-color: yellow;
+    font-size: 22pt;
+    font-weight: bold;
+}
+.red { color:rgb(255,0,0); /* Defining classes */
+    font-style: italic;
+    font-size: 32;
+}
+.blue { color:blue;
+    font-style: italic;
+    font-size: 36;
+}
+.green { color: green;
+    font-style: oblique;
+    font-family: fantasy;
+    font-size: 40;
+}

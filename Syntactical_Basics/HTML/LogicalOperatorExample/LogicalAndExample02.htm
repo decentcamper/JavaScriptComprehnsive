@@ -1,0 +1,23 @@
+<!--In this code, the alert is displayed successfully. Even though the variable someUndeclaredVariable-->
+<!--is undefined, it is never evaluated, because the first operand is false. This means that the result of-->
+<!--the operation must be false, so there is no reason to evaluate what’s to the right of the &&. Always-->
+<!--keep in mind short-circuiting when using logical AND.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logical AND Example 2</title>
+    <script type="text/javascript">
+
+        var found = false;
+        var result = (found && someUndeclaredVariable);    //no error
+        alert(result);    //works
+
+
+    </script>
+
+</head>
+<body>
+  
+</body>
+</html>

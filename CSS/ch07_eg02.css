@@ -1,0 +1,11 @@
+/* Style sheet for ch07_eg02.html */
+
+body {
+   color:#000000;
+   background-color:#ffffff;
+   font-family:arial, verdana, sans-serif; }
+
+p.one {font-family:arial, verdana, sans-serif;}
+p.two {font-family:times, times new roman, serif;}
+p.three {font-family:fantasy;}
+

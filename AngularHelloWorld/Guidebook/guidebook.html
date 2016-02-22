@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app='Guidebook'>
+  <head>
+    <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js'></script>
+    <script src='Guidebook.js'></script>
+    <script src='controller/ChapterController.js'></script>
+    <script src='controller/NotesControllers.js'></script>
+    <script src='model/NoteModel.js'></script>
+    <script src='model/ChapterModel.js'></script>
+    <link rel='stylesheet' href='view/styles.css'>
+    <title>AngularJS Starter Guidebook</title>
+  </head>
+  <body>
+    <h1>Welcome to the AngularJS Extra Class Tutorial</h1>
+    <div ng-view>
+      <!-- We'll add views here at runtime. -->
+    </div>
+  </body>
+</html>
+
+
+<!--
+Some of this looks familiar. We have our DocType, we're including AngularJS, and we have a couple of annotations.
+We're also including all of our model and controller files, but none of our view files (views are mapped via JavaScript,
+which we'll get to in a minute).
+
+Note that this time, we're defining a name for our application in the ng-app annotation.
+This isn't necessary, as we saw in our last example, but it's a good idea for real-world applications,
+because it helps us to namespace our models and controllers.
+(If we had two AngularJS applications on the same page, separate modules would help us remember which components belong to which application).
+
+We also have a new annotation: ng-view. This tells AngularJS where to load our views.
+There can only be one instance of ng-view, and it should contain everything we want to load and change dynamically in the application.
+If something resides outside of ng-view, like the heading in our earlier example, it will be visible at all times.-->

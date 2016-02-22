@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script language="JavaScript"> 
+     var myImages=new Array("http://localhost:8090/Class6/images/baby-1.jpg", 
+    		 				 "http://localhost:8090/Class6/images/baby-2.gif", 
+    		 				"http://localhost:8090/Class6/images/baby-3.jpg",
+    		 				"http://localhost:8090/Class6/images/baby-4.jpg"); 
+     index_val=0; 
+     function next_image(){ 
+     	index_val++; 
+        if (index_val < myImages.length){
+        	document.images["display"].src = myImages[index_val];
+           } 
+        else{ 
+        	index_val=0; 
+            document.images["display"].src = myImages[index_val]; 
+            } 
+      } 
+	function previous_image(){ 
+    	index_val--; 
+    	if (index_val >= 0){ 
+        	document.images["display"].src = myImages[index_val]; 
+            } 
+		else{ 
+                 index_val=myImages.length - 1; 
+                 document.images["display"].src = myImages[index_val]; 
+              } 
+          } 
+       </script> 
+
+</head>
+<body bgcolor="cornflowerblue">
+	<h2>&nbsp;&nbsp;Baby Gallery</h2> 
+   <img name="display" src="http://localhost:8090/Class6/images/baby-1.jpg" width="220" height="250" > 
+    <br> 
+	<a href="javascript:next_image()"> 
+ 	  Go to next baby<br> 
+   </a> 
+	<a href="javascript:previous_image()"> 
+  		 Go to previous baby<br> 
+   </a> 
+	</body>
+</html>

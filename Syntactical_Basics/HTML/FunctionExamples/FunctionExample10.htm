@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Example 10</title>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+
+    <script type="text/javascript">
+        function addSomeNumber(num){
+            alert(num + 100);
+        }
+        
+        function addSomeNumber(num) {
+            alert(num + 200) ;
+        }
+
+
+    </script>
+</head>
+<body>
+<pre class="prettyprint">
+<p>
+    Here, the function addSomeNumber() is defi ned twice. The fi rst version of the function adds 100
+    to the argument, and the second adds 200.<br>
+    When the last line is called, it returns 300 because the
+    second function has overwritten the first.<br>
+    As mentioned previously, it is  possible to simulate overloading of methods by checking the type and
+    number of arguments that have been passed into a function and then reacting accordingly.
+</p>
+
+    function addSomeNumber(num){
+            alert(num + 100);
+        }
+
+        function addSomeNumber(num) {
+            alert(num + 200) ;
+        }
+
+
+ </pre>
+
+<button onclick="addSomeNumber(20)">Click to Try Overloading</button>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Certain types of input require that specifi c characters be presenxt or absent. For example, a text box-->
+    <!--for the user’s phone number should not allow non-numeric values to be inserted. The keypress-->
+    <!--event is responsible for inserting characters into a text box. Characters can be blocked by preventing-->
+    <!--this event’s default behavior.-->
+    <title>Textbox Input Filtering Example</title>
+    <script type="text/javascript" src="EventUtil.js"></script>
+</head>
+<body>
+    <p>Select some text in the textbox.</p>
+    <form method="post" action="javascript:alert('Form submitted!')" id="myForm">        
+        <div>
+            <label>Type a phone number:</label><br>
+            <input type="text" id="txtPhone" name="phone" value="">
+        </div>
+    </form>     
+    <script type="text/javascript">
+        //(function(){
+            window.onload = function(){
+                var textbox = document.getElementById("txtPhone");
+                textbox.addEventListener("keypress", function(event){
+                    //alert('key pressed' + String.fromCharCode(event.charCode ))
+                    var charCode = event.charCode;
+                    if(charCode !=0){
+                        if (!/\d/.test(String.fromCharCode(charCode))){
+                            event.preventDefault();
+                        }
+
+                    }
+                })
+
+            }
+
+        //})();
+
+
+//        In this example, the character code is retrieved using EventUtil.getCharCode() for cross-browser
+//                compatibility. The character code is converted to a string using String.fromCharCode(), and the
+//        result is tested against the regular expression /\d/, which matches all numeric characters. If that
+//        test fails, then the event is blocked using EventUtil.preventDefault(). This ensures that the text
+//        box ignores nonnumeric keys.
+    </script>
+</body>
+</html>

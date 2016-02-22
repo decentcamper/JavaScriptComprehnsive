@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Placemark>
+    <name>Crater Lake</name>
+    <description>A deep blue lake in the Cascade Mountains.</description>
+    <Point>
+      <coordinates>-122.1089,42.9413,0</coordinates>
+    </Point>
+  </Placemark>
+</kml>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function openPopUp(){
+            var wroxWin =window.open("http://www.wrox.com/","wroxWindow",
+            "height=400,width=400,top=10,left=10,resizable=yes");
+//resize it
+            wroxWin.resizeTo(500, 1500);
+//move it
+            wroxWin.moveTo(100, 1500);
+
+
+        }
+
+
+    </script>
+</head>
+<body>
+<input type="button" value="Click to Open PopUp" onclick="openPopUp()">
+</body>
+</html>

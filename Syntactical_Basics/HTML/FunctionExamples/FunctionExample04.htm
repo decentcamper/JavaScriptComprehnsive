@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Example 4</title>
+
+    <!--The return statement can also be used without specifying a return value. When used in this way,-->
+    <!--the function stops executing immediately and returns undefined as its value. This is typically used-->
+    <!--in functions that don’t return a value to stop function execution early, as in the following example,-->
+    <!--where the alert won’t be displayed:-->
+
+    <script type="text/javascript">
+        function sayHi(name, message) {
+            return;
+            alert("Hello " + name + ", " + message);    //never called
+        }
+
+        sayHi("Vivek", "how are you today?");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

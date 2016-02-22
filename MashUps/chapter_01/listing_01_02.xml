@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" 
+      xmlns:georss="http://www.georss.org/georss">
+  <title>National Park Tour</title>
+  <updated>2008-05-19T19:41:10Z</updated>
+  <entry>
+    <title>Crater Lake</title>
+    <summary>A deep blue lake in the Cascade Mountains.</summary>
+    <updated>2008-05-19T19:41:10Z</updated>
+    <georss:point>42.9413 -122.1089</georss:point>
+  </entry>
+</feed>

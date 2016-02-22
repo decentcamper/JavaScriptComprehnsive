@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>JavaScript fileupload - onchange() method example</title>
+</head>
+<body>
+<h1 style="color: red">JavaScript fileupload Event handler : onchange</h1>
+<h3>Select a file from the folder. When the filename change the onchange event executes an alert message....</h3>
+<hr />
+<script type="text/javascript">
+    //This is done to make the following JavaScript code compatible to XHTML. <![CDATA[
+    function fileinfo()
+    {
+        alert("File name has changed......")
+    }
+    //]]>
+</script>
+<form name="form1" action="#">
+    Select a  file :
+    <input type="file" name="fupbox" size="40" onchange='fileinfo()' />
+    <br />
+    <br />
+</form>
+</body>
+</html>

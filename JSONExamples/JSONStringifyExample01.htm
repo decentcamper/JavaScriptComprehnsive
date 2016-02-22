@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Stringify Example</title>
+</head>
+<body>
+    <p>This example serializes an object and passes in a filter array.</p>
+    <script type="text/javascript">
+        var book = {
+                        title: "Professional JavaScript",
+                        authors: [
+                            "Vivek Sharma"
+                        ],
+                        edition: 3,
+                        year: 2011
+                   };
+
+//        This example serializes a JavaScript object into a JSON string using JSON.stringify() and stores
+//        it in jsonText. By default, JSON.stringify() outputs a JSON string without any extra white space
+//        or indentation, so the value stored in jsonText is:
+//        {“title”:”Professional JavaScript”,”authors”:[“Vivek”],”edition”:3,“year”:2011}
+
+
+/*        When serializing a JavaScript object, all functions and prototype members are intentionally omitted
+        from the result. Additionally, any property whose value is undefined is also skipped. You’re left
+        with just a representation of the instance properties that are one of the JSON data types.*/
+
+        //var jsonText = JSON.stringify(book);
+
+
+
+
+       var jsonText = JSON.stringify(book, ["title", "edition"]);
+       //var jsonText = JSON.stringify(book);
+
+
+/*
+        The second argument to JSON.stringify() is an array with two strings: “title” and “edition”.
+        These correspond to properties in the object being serialized, and so only those properties appear in
+        the resulting JSON string:
+        {“title”:”Professional JavaScript”,”edition”:3}*/
+
+
+
+
+        //var jsonText = JSON.stringify(book,["title","edition"],4);
+       //
+        console.log(jsonText);
+
+    </script>
+</body>
+</html>

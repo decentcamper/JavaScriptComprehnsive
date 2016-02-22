@@ -1,0 +1,27 @@
+<!--This code causes an error when the logical AND is evaluated, because the variable-->
+<!--someUndeclaredVariable isn’t declared. The value of the variable found is true, so the logical-->
+<!--AND operator continued to evaluate the variable someUndeclaredVariable. When it did, an error-->
+<!--occurred because someUndeclaredVariable is not declared and therefore cannot be used in a logical-->
+<!--AND operation.-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logical AND Example 1</title>
+    <script type="text/javascript">
+
+        var found = false;
+
+        var result = (found && someUndeclaredVariable);
+        alert(result);
+
+
+
+    </script>
+
+</head>
+<body>
+  
+</body>
+</html>

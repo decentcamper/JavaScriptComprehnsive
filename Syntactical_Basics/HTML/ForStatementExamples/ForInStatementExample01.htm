@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For-In Statement Example 1</title>
+    <!--Here, the for-in statement is used to display all the properties of the
+    BOM window object. Each-->
+    <!--time through the loop, the propName variable is fi lled with the name of a property that exists-->
+    <!--on the window object. This continues until all of the available properties have been enumerated-->
+    <!--over. As with the for statement, the var operator in the control statement is not necessary but is-->
+    <!--recommended for ensuring the use of a local variable.-->
+    <!--Object properties in ECMAScript are unordered, so the order in which property names are returned-->
+    <!--in a for-in statement cannot necessarily be predicted. All enumerable properties will be returned-->
+    <!--once, but the order may differ across browsers.-->
+</head>
+<body>
+    <script type="text/javascript">
+
+        var example = {
+            name : "Vivek",
+            age   : 30,
+            occupation: "Instructor"
+        };
+
+        //todo
+        // add back:
+        //,
+        /*toString : function(){
+            return "name --> " + this.name + " age ----> " + this.age + " occupation ----> " + this.occupation;
+
+        }
+
+        alert(example);
+        for (var property in example) {
+             document.writeln(property + "----> ");
+             document.writeln(example[property]);
+             document.writeln("<br />"); }*/
+
+        for(var property in example){
+            alert("Property >> " + property + "    Value >> " + example[property]);
+
+
+        }
+
+
+
+    </script>
+</body>
+</html>

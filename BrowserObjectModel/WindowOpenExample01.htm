@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Open Example</title>
+    <script type="text/javascript">
+            var windowReference;
+        function openWindows(url,windowName){
+            windowReference= window.open(url,windowName);
+        }
+        function closeWindow(){
+                windowReference.close();
+        }
+
+    </script>
+</head>
+<body>
+    <p>This will open a new window/tab:
+    <input type="button" value="Go to Yahoo.com"
+           onclick="openWindows('http://www.yahoo.com/','topFrame')" /></p>
+    <p>This will close the newly opened window/tab:
+    <input type="button" value="Close Yahoo.com"
+           onclick="closeWindow()" /></p>
+    <p>This will open in the current window/tab:
+    <input type="button" value="Go to Yahoo.com"
+           onclick="openWindows('http://www.yahoo.com/', '_self')" /></p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Type this Example</title>
+    <!--The function sayColor() is defined globally but references the this object. The value of this-->
+    <!--is not determined until the function is called, so its value may not be consistent throughout the-->
+    <!--code execution. When sayColor() is called in the global scope, it outputs “red” because this-->
+    <!--is pointing to window, which means this.color evaluates to window.color. By assigning the-->
+    <!--function to the object o and then calling o.sayColor(), the this object points to o, so this.color-->
+    <!--evaluates to o.color and “blue” is displayed.-->
+    <script type="text/javascript">
+
+        window.color = "red";
+        var o = { color: "blue" };
+
+        function sayColor(){
+            alert(this.color);
+        }
+        
+        sayColor();     //red
+
+
+        sayColor.call(o);
+
+       //o.sayColor = sayColor;
+
+        //o.sayColor();   //blue
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

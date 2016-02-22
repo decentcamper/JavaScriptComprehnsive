@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        function getValue(){
+            var f = parseFloat(document.getElementById("num1").value);
+            var num = (5/9*(f-32));
+            alert("The Temp in Celsius is " + (num));
+        }
+    </script>
+
+
+</head>
+<body>
+<input type="text" id = "num1">
+<input type="button" value="Get Value" onclick="getValue()">
+
+</body>
+</html>

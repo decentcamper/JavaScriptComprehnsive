@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+"http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<!--When the first frameset is loaded into the browser, it loads another frameset into rightFrame.-->
+<!--If code is written inside redFrame (or blueFrame), the parent object points to rightFrame. If,-->
+<!--however, the code is written in topFrame, then parent points to top because its immediate parent is-->
+<!--the outermost frame.-->
+
+<!--Note that the topmost window will never have a value set for name unless the window was opened-->
+<!--using window.open(), as discussed later in this chapter.-->
+<!--There is one final window object, called self, which always points to window. The two can, in fact,-->
+<!--be used interchangeably. Even though it has no separate value, self is included for consistency with-->
+<!--the top and parent objects.-->
+<!--Each of these objects is actually a proper™ty of the window object, accessible via window.parent,-->
+<!--window.top, and so on. This means it’s possible to chain window objects together, such as window-->
+<!--.parent.parent.frames[0].-->
+<head>
+    <title>Frameset Example</title>
+</head>
+<frameset rows="100,*">
+    <frame src="frame.htm" name="topFrame">
+    <frameset cols="50%,50%">
+        <frame src="anotherframe.htm" name="leftFrame">
+        <frame src="anotherframeset.htm" name="rightFrame">
+    </frameset>
+</frameset>
+</html>

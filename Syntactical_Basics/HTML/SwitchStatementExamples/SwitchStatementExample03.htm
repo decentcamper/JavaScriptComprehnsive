@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+//    Although the switch statement was borrowed from other languages, it has some unique characteristics
+//    in ECMAScript. First, the switch statement works with all data types (in many languages it works
+//    only with numbers), so it can be used with strings and even with objects. Second, the case values need
+//    not be constants; they can be variables and even expressions.
+    // Consider the following example:
+    <title>Switch Statement Example 3</title>
+    <script type="text/javascript">
+        switch ("hello world") {
+            case "hello" + " world": 
+                alert("Greeting was found.");
+                break;
+            case "goodbye": 
+                alert("Closing was found.");
+                break;
+            default: 
+                alert("Unexpected message was found.");
+        }
+
+    </script>
+
+
+//    In this example, a string value is used in a switch statement. The fi rst case is actually an expression
+//    that evaluates a string concatenation. Because the result of this concatenation is equal to the switch
+//    argument, the alert displays “Greeting was found.”
+</head>
+<body>
+
+</body>
+</html>

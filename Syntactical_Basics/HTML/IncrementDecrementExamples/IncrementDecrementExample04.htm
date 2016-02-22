@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <title>Increment/Decrement Example 4</title>
+    <!--1. When used on a string that is a valid representation of a number,
+    convert to a number and-->
+    <!--apply the change. The variable is changed from a string to a number.-->
+    <!--2. When used on a string that is not a valid number, the variable’s value is set to NaN (discussed-->
+    <!--. The variable is changed from a string to a number.-->
+    <!--3. When used on a Boolean value that is false,
+    convert to 0 and apply the change. The-->
+    <!--variable is changed from a Boolean to a number.-->
+    <!--4. When used on a Boolean value that is true,
+    convert to 1 and apply the change. The variable-->
+    <!--is changed from a Boolean to a number.-->
+    <!--5. When used on a floating-point value, apply the change by adding or subtracting 1.-->
+    <!--6. When used on an object, call its valueOf()
+    method  to get-->
+    <!--a value to work with. Apply the other rules.
+    If the result is NaN, then call toString() and-->
+    <!--apply the other rules again. The variable is changed from an object to a number.-->
+
+    <script type="text/javascript">
+          
+        var s1 = "2";
+        var s2 = "z";
+        var b = false;
+        var f = 1.1;
+        var o = { 
+            valueOf: function() {
+                return -1;
+            }
+        };
+        
+        s1++;   //value becomes numeric 3
+        s2++;   //value becomes NaN
+        b++;    //value becomes numeric 1
+        f--;    //value becomes 0.10000000000000009
+        o--;    //value becomes numeric -2
+
+        alert(s1);
+        alert(s2);
+        alert(b);
+        alert(f);
+        alert(o);
+
+        var d = "125";
+        var abc = Number("125");
+        var dce = +d;
+
+    </script>
+
+</head>
+<body>
+  
+</body>
+</html>

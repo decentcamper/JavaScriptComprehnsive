@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Of these methods, the two most similar are every() and some(), which both query the array for-->
+    <!--items matching some criteria. For every(), the passed-in function must return true for every item-->
+    <!--in order for the method to return true; otherwise, it returns false. The some() method, on the-->
+    <!--other hand, returns true if even one of the items causes the passed-in function to return true. Here-->
+    <!--is an example:-->
+    <title>Array every() and some() Example</title>
+</head>
+<body>
+    <script>
+        var numbers = [1,2,3,4,5,4,3,2,1];
+        
+        var everyResult = numbers.every(function(item, index, array){
+            return (item > 2);
+        });
+        
+        alert(everyResult);       //false
+        
+        var someResult = numbers.some(function(item, index, array){
+            return (item > 2);
+        });
+        
+        alert(someResult);       //true
+
+//        This code calls both every() and some() with a function that returns true if the given item is
+//        greater than 2. For every(), the result is false, because only some of the items fi t the criteria. For
+//        some(), the result is true, because at least one of the items is greater than 2.
+
+
+    </script>
+</body>
+</html>

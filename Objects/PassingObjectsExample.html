@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Passing Object Example</title>
+    <script type="text/javascript">
+
+        var original = {howmany: 1};
+        var copy = original; //Copying the reference
+       // alert(copy.howmany) //alerting the attribute
+        copy.howmany = 100;
+       // alert(original.howmany);
+
+
+        //Passing Function to objects
+        var original = {howmany: 100};
+        var nullify = function(o) {o.howmany = 0;}
+        nullify(original);
+        alert(original.howmany);
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

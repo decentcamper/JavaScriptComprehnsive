@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LanguageInjectionConfiguration">
+    <injection language="JavaScript 1.8" injector-id="xml">
+      <display-name>head</display-name>
+      <place><![CDATA[xmlTag().withLocalName(string().equalTo("head")).withNamespace(string().equalTo("http://www.w3.org/1999/html"))]]></place>
+    </injection>
+    <injection language="JavaScript 1.8" injector-id="xml">
+      <display-name>html</display-name>
+      <place><![CDATA[xmlTag().withLocalName(string().equalTo("html")).withNamespace(string().equalTo("http://www.w3.org/1999/html"))]]></place>
+    </injection>
+  </component>
+</project>
+

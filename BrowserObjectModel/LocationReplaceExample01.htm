@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--If this page is loaded into a web browser, it will redirect to cafter a second. At that-->
+    <!--point, the Back button will be disabled, and you won’t be able to navigate back to this example page-->
+    <!--without typing in the complete URL again.-->
+    <title>You won't be able to get back here</title>
+</head>
+<body>
+
+    <p>Enjoy this page for a second, because you won't be coming back here.</p>
+    <script type="text/javascript">
+        setTimeout(function () {
+            location.replace("http://www.wrox.com/");
+            //location.assign("http://www.wrox.com/");
+            //window.open("http://www.yahoo.com",'_self');
+        }, 5000);
+    </script>
+</body>
+</html>

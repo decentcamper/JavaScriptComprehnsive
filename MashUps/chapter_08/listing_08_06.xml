@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Nearest Place Name"
+               description="Find the name of the place nearest to a click the map."
+               author="Sterling Udell"
+               author_email="sterling.udell+mapplet@googlemail.com"
+               screenshot="http://sterlingudell.com/bgmm/chapter_08/geoname_scr.png"
+               thumbnail="http://sterlingudell.com/bgmm/chapter_08/geoname_thm.png">
+    <Require feature="sharedmap" />
+    <Require feature="dynamic-height"/>
+  </ModulePrefs>
+  <Content type="html"><![CDATA[
+    <style type="text/css">
+      p {
+        font-size: 90%;
+      }
+    </style>
+    
+    <p>
+      Click anywhere on the map to get the name of the nearest populated place.
+      Lookup services provided by <a href="http://geonames.org/">GeoNames.org</a>.
+    </p>
+
+    <script type="text/javascript"
+            src="http://sterlingudell.com/bgmm/json_parse.js"></script>
+    <script type="text/javascript">
+      function mapClick(overlay, coordinates)
+      {
+        // mapClick: event handler to prepare for the placename-lookup
+
+        if (overlay != null)
+          // Click wasn't on "empty" map space, so don't go any further
+          return;
+
+        if (timeout == null)
+        {
+          // The first click we've had recently => start a timeout for the lookup
+          clickCoords = coordinates;
+          timeout = setTimeout('placeMarker()', 500);
+        }
+        else
+        {
+          // Second click means it's a double-click, so cancel the lookup timeout
+          clearTimeout(timeout)
+          timeout = null;
+        }
+      };
+
+      function placeMarker()
+      {
+        // placeMarker: Only called after a true single click, so do the lookup
+
+        if (clickCoords == null)
+          // We have no clicked coordinates for some reason, so we can't proceed
+          return;
+
+        if (marker == null)
+        {
+          // Marker doesn't exist yet, so create it now
+          marker = new GMarker(clickCoords, {icon: clickIcon});
+          map.addOverlay(marker);
+        }
+        else
+        {
+          // Move the marker to the new coords and reset it to the default icon
+          marker.setPoint(clickCoords);
+          marker.setImage(clickIcon.image);
+        }
+
+        // Build and retrieve the placename lookup URL from the clicked coordinates
+        var url = 'http://ws.geonames.org/findNearbyPlaceNameJSON?lat=' + 
+                  clickCoords.lat() + '&lng=' + clickCoords.lng();
+        _IG_FetchContent(url, afterGeoname);
+
+        // Prepare for the next click
+        timeout = null;
+      };
+      
+      function afterGeoname(responseText)
+      {
+        // afterGeoname: callback when the placename lookup has completed
+
+        // Evaluate the JSON response to extract the data from it
+        var responseData = json_parse(responseText);
+
+        if (responseData.geonames.length == 0)
+        {
+          // No place name found; let the user know with a simple message
+          marker.setImage('http://sterlingudell.com/bgmm/markers/red.png');
+          var content = 'No nearby place name found.';
+        }
+        else
+        {
+          // Place name found succesfully; build it into an infowindow
+          marker.setImage('http://sterlingudell.com/bgmm/markers/green.png');
+          var place = responseData.geonames[0];
+          var miles = parseFloat(place.distance) / 1.61;
+          var content = miles.toFixed(2) + ' miles from ' + place.name + ',<br />' + 
+                        place.adminName1 + ', ' + place.countryName;
+        }
+
+        // Show the infowindow content, and also bind it to the marker for later use
+        marker.openInfoWindow(content);
+        marker.bindInfoWindow(content);
+      };
+
+      // END FUNCTION DECLARATIONS - BEGIN MAIN MAPPLET CODE
+      
+      // Declare variables for later use
+      var timeout;
+      var clickCoords;
+      var marker;
+
+      // Initialize the map
+      var map = new GMap2();
+
+      // Create the default clicked placemark icon
+      var clickIcon = new GIcon(G_DEFAULT_ICON);
+      clickIcon.image = 'http://sterlingudell.com/bgmm/markers/yellow.png';
+      
+      // Attach map event to handle the click behavior
+      GEvent.addListener(map, 'click', mapClick);
+
+      // Adjust the height of the sidebar display
+      _IG_AdjustIFrameHeight();
+    </script>
+
+    <hr /><p>This mapplet is an example from the book:</p>
+    <iframe src="http://rcm.amazon.com/e/cm?t=gadgplan-20&o=1&p=8&l=as1&asins=1430216204&nou=1&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+  ]]></Content>
+</Module>

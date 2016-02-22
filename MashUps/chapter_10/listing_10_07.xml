@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0">
+  <url>
+    <loc>http://sterlingudell.com/bgmm/chapter_10/listing_10_03.php</loc>
+    <geo:geo>
+      <geo:format>kml</geo:format>
+    </geo:geo>
+  </url>
+  <url>
+    <loc>http://sterlingudell.com/bgmm/chapter_10/listing_10_04.php</loc>
+    <geo:geo>
+      <geo:format>georss</geo:format>
+    </geo:geo>
+  </url>
+</urlset>

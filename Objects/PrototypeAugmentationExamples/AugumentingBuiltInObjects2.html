@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        String.prototype.reverse = function() {
+            return Array.prototype.reverse.apply(this.split('')).join('');
+        }
+        alert("Vivek".reverse());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

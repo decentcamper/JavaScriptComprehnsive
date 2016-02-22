@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>Form Field Events Example</title>
+    <script type="text/javascript" src="EventUtil.js"></script>
+    <script type="text/javascript">
+
+        function focusElement(event){
+            var target = event.target;
+            target.style.background = "yellow";
+        }
+
+        function flagError(event){
+            var target = event.target;
+            if(/[^\d]/.test(target.value)){
+                target.style.background = "red";
+            }
+        }
+        function inputFiltering(event){
+            var target = event.target;
+            var keyCode = event.keyCode;
+            if(! /\d/.test(String.fromCharCode(keyCode))){
+                event.preventDefault();
+
+            }
+
+
+        }
+
+        window.onload = function(){
+            var textBox = document.getElementById("txtNumbers");
+            textBox.addEventListener("focus", focusElement);
+            textBox.addEventListener("blur", flagError);
+            textBox.addEventListener("keypress",inputFiltering);
+            textbox.focus();
+
+
+
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+<p>The textbox will receive focus as soon as the page loads. You can then start typing.</p>
+<form method="post" action="javascript:alert('Form submitted!')" id="myForm">
+    <div>
+        <label >Type numbers:</label><br />
+        <input type="text" id="txtNumbers" name="numbers" />
+    </div>
+    <input type="submit" value="Submit Form" id="submit-btn" />
+</form>
+
+</body>
+</html>

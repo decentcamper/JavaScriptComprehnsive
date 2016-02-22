@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Placeopedia"
+               description="The latest Wikipedia entries with locations."
+               author="Sterling Udell"
+               author_email="sterling.udell+mapplet@googlemail.com"
+               screenshot="http://sterlingudell.com/bgmm/chapter_07/screenshot.png"
+               thumbnail="http://sterlingudell.com/bgmm/chapter_07/thumbnail.png">
+    <Require feature="sharedmap" />
+    <Require feature="dynamic-height"/>
+  </ModulePrefs>
+  <UserPref name="Entries"
+            datatype="enum"
+            default_value="25">
+    <EnumValue value="10" />
+    <EnumValue value="25" />
+    <EnumValue value="50" />
+  </UserPref>
+  <Content type="html"><![CDATA[
+    <style type="text/css">
+      p {
+        font-size: 90%;
+      }
+    </style>
+    
+    <p>
+      The latest Wikipedia entries with locations, from
+      <a href="http://www.placeopedia.com/">placeopedia.com</a>.
+    </p>
+
+    <script type="text/javascript">
+      // Initialize the map
+      var map = new GMap2();
+
+      // Adjust the height of the sidebar display
+      _IG_AdjustIFrameHeight();
+
+      // Build a URL for the Placeopedia feed based on the user's preferred count
+      var prefs = new _IG_Prefs();
+      var entries = prefs.getString('Entries');
+      var url = 'http://www.placeopedia.com/cgi-bin/rss.cgi?num_results=' + entries;
+
+      // Retrieve and display the GeoRSS feed
+      var geoXml = new GGeoXml(url);
+      map.addOverlay(geoXml);
+    </script>
+
+    <hr /><p>This mapplet is an example from the book:</p>
+    <iframe src="http://rcm.amazon.com/e/cm?t=gadgplan-20&o=1&p=8&l=as1&asins=1430216204&nou=1&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+  ]]></Content>
+</Module>

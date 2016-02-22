@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Satellite-Friendly Campgrounds"
+               description="Campgrounds in North America with coverage for satellite TV and internet. Results contributed by users on-site with GPS."
+               author="Sterling Udell"
+               author_email="sterling.udell+mapplet@googlemail.com"
+               screenshot="http://satellitefriendly.com/images/cg_mapplet_scr.png"
+               thumbnail="http://satellitefriendly.com/images/cg_mapplet_thm.png">
+    <Require feature="sharedmap" />
+    <Require feature="dynamic-height"/> 
+    <Require feature="setprefs" />
+  </ModulePrefs>
+  <UserPref datatype="hidden" name="quantity" default_value="all" />
+  <Content type="html"><![CDATA[
+    <style type="text/css">
+      p, table {
+        font-size: 90%;
+        width: 100%;
+        text-align: left;
+      }
+      h3 {
+        margin: 0;
+        font-size: 12pt;
+      }
+      img {
+        vertical-align: middle;
+      }
+      .coverage {
+        text-align: center;
+      }
+    </style>
+    
+    <p>
+      Campgrounds in North America with coverage for satellite TV and internet.
+      Locations from 
+      <a href="http://www.satellitefriendly.com/">SatelliteFriendly.com</a>,
+      contributed by users on-site with GPS.
+    </p>
+
+    <p>
+      View: 
+      <select id="quantity" onchange="quantityChange()">
+        <option value="all">All Campgrounds</option>
+        <option value="popular">Most Popular</option>
+        <option value="recent">Most Recent Entries</option>
+      </select>
+    </p>
+
+    <h3>Legend</h3>
+    <table>
+      <tr>
+        <td colspan="2">
+          <img src="http://satellitefriendly.com/images/icons/info_circle.png"
+               width="32" height="32" /> Multiple campgrounds in area
+        </td>
+      </tr>
+      <tr>
+        <th>Campsite Hookups</th>
+        <th class="coverage">Satellite Coverage</th>
+      </tr>
+      <tr>
+        <td>
+          <img src="http://satellitefriendly.com/images/icons/bus_gray.png"
+               width="32" height="32" /> Full
+        </td>
+        <td class="coverage">
+          <img width="64" height="18"
+               src="http://satellitefriendly.com/images/excellent.png"
+           title="Large areas of the campground are completely clear" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="http://satellitefriendly.com/images/icons/trailer_gray.png"
+               width="32" height="32" /> Electric
+        </td>
+        <td class="coverage">
+          <img width="44" height="18"
+               src="http://satellitefriendly.com/images/good.png"
+           title="Several sites are mostly clear" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="http://satellitefriendly.com/images/icons/tent_gray.png"
+               width="32" height="32" /> None
+        </td>
+        <td class="coverage">
+          <img width="39" height="18"
+               src="http://satellitefriendly.com/images/poor.png"
+           title="One site has at least a partial view of one satellite" />
+        </td>
+      </tr>
+    </table>
+
+    <script type="text/javascript">
+      function viewChange()
+      {
+        // viewChange: refresh the geodata display to match the new selection
+
+        // Get the selection from the XHTML
+        var selected = view.options[view.selectedIndex].value;
+
+        // Save the new selection to hiddden user preference        
+        prefs.set('view', selected);
+
+        // Remove any previous data overlay     
+        if (geoXml != null)
+          map.removeOverlay(geoXml);
+
+        // Set the new geodata URL to use
+        if (selected == 'all')
+          geoXml = new GGeoXml(urlAll);
+        else if (selected == 'recent')
+          geoXml = new GGeoXml(urlRecent);
+        else
+          geoXml = new GGeoXml(urlTop);
+
+        // Add data from the new URL to the map
+        map.addOverlay(geoXml);
+      };
+
+      // END FUNCTION DECLARATIONS - BEGIN MAIN MAPPLET CODE
+
+      // Initialize the map
+      var map = new GMap2();
+      var geoXml;
+      var quantity = document.getElementById('quantity');
+      var prefs = new _IG_Prefs();
+
+      // Declare and initialize data source URLs
+      var urlAll = 'http://v3.satellitefriendly.com/services/all_network.kml';
+      var urlTop = 'http://v3.satellitefriendly.com/services/popular_network.kml';
+      var urlRecent = 'http://v3.satellitefriendly.com/services/recent_network.kml';
+      
+      // Adjust the height of the sidebar display
+      _IG_AdjustIFrameHeight();
+
+      // Initialize the data-quantity selector to the saved value
+      for (var s = 0; s < quantity.options.length; s++) 
+        if (quantity.options[s].value == prefs.getString('quantity'))
+        {
+          quantity.selectedIndex = s;
+          break;
+        }
+
+      // Initialize the data display
+      quantityChange();
+    </script>
+  ]]></Content>
+</Module>

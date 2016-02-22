@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Placeopedia"
+               description="The latest 50 Wikipedia entries with locations."
+               author="Sterling Udell"
+               author_email="sterling.udell+mapplet@googlemail.com"
+               screenshot="http://sterlingudell.com/bgmm/chapter_07/screenshot.png"
+               thumbnail="http://sterlingudell.com/bgmm/chapter_07/thumbnail.png">
+    <Require feature="sharedmap" />
+    <Require feature="dynamic-height"/> 
+  </ModulePrefs>
+  <Content type="html"><![CDATA[
+    <style type="text/css">
+      p {
+        font-size: 90%;
+      }
+    </style>
+    
+    <p>
+      The latest 50 Wikipedia entries with locations, from
+      <a href="http://www.placeopedia.com/">placeopedia.com</a>.
+    </p>
+
+    <script type="text/javascript">
+      // Initialize the map
+      var map = new GMap2();
+
+      // Adjust the height of the sidebar display
+      _IG_AdjustIFrameHeight();
+
+      // Add KML feed
+      var geoXml = new GGeoXml('http://www.placeopedia.com/cgi-bin/rss.cgi');
+      map.addOverlay(geoXml);
+    </script>
+  ]]></Content>
+</Module>

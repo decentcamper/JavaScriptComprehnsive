@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--This function returns an array of options that are selected in a given select box. First an array to-->
+    <!--contain the results is created. Then a for loop iterates over the options, checking each option’s-->
+    <!--selected property. If the option is selected, it is added to the result array. The last step is to-->
+    <!--return the array of selected options.-->
+    <title>Selectbox Example</title>
+    <script type="text/javascript" src="EventUtil.js"></script>
+</head>
+<body>
+    
+    <form method="post" action="javascript:alert('Form submitted!')" id="myForm">            
+        <div>
+            <label for="selLocation">Where do you want to live?</label>
+            <select name="location" id="selLocation" size="5" multiple>
+                <option value="Sunnyvale, CA">Sunnyvale</option>
+                <option value="Los Angeles, CA">Los Angeles</option>
+                <option value="Mountain View, CA">Mountain View</option>
+                <option value="">China</option>
+                <option>Australia</option>
+            </select>
+        </div>
+        <div>
+            <input type="button" value="Get selected options" id="btnSelected">
+        </div>
+    </form>     
+    <script type="text/javascript">
+        (function(){
+
+            function getSelectedOptions(selectbox){
+                var result = new Array();
+                var option = null;
+                
+                for (var i=0, len=selectbox.options.length; i < len; i++){
+                    option = selectbox.options[i];
+                    if (option.selected){
+                        result.push(option);
+                    }
+                }
+
+                return result;            
+            }
+
+            function callbackFunction(event){
+                var selectbox = document.getElementById("selLocation");
+                var selectedOptions = getSelectedOptions(selectbox);
+                var message = "";
+                for (var i=0, len=selectedOptions.length; i < len; i++){
+                    message += "Selected index: " + selectedOptions[i].index + "\nSelected text: " + selectedOptions[i].text +
+                            "\nSelected value: " + selectedOptions[i].value + "\n\n";
+                }
+                alert(message);
+            }
+            var btn3 = document.getElementById("btnSelected");
+
+
+            btn3.addEventListener("click",callbackFunction,false );
+
+            
+        })();
+    
+    </script>
+</body>
+</html>

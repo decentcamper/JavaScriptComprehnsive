@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Using Prototype Properties</title>
+<script type="text/javascript">
+    function Gadget(name, color) {
+        this.name = name;
+        this.color = color;
+        this.whatAreYou = function(){
+            return 'I am a ' + this.color + ' ' + this.name;
+        }
+    }
+
+    Gadget.prototype.price = 100;
+    Gadget.prototype.rating = 3;
+    Gadget.prototype.getInfo = function() {
+        return 'Rating: ' + Gadget.prototype.rating + ', price: ' + this.price;
+    };
+
+    var newtoy = new Gadget('webcam', 'black');
+    var newtoy2 = new Gadget('webcam1', 'black');
+    var newtoy3 = new Gadget('webcam2', 'black');
+    alert(newtoy.color);
+    alert(newtoy.name);
+    alert(newtoy.whatAreYou());
+    alert(newtoy.price);
+    alert(newtoy.getInfo());
+    newtoy.price = "200";
+
+
+//    It's important to note that the prototype is "live". Objects are passed by reference in JavaScript, and therefore the prototype' +
+//     is not copied with every new object instance. What does this mean in practice? ' +
+//    'It means that you can modify the prototype at any time and all objects (even those created before the modification) will inherit the changes.
+
+    Gadget.prototype.get = function(what) {
+        console.log(this);
+        return newtoy[what];
+        return this[what];
+    };
+
+    Gadget.prototype.getName = function(){
+        return this.name;
+
+    };
+    Gadget.prototype.getColor = function(){
+        return this.color;
+
+    };
+
+
+    alert(newtoy.get('price'));
+    alert(newtoy1.get('price'));
+    alert(newtoy2.get('price'));
+
+    alert(newtoy.get('color'));
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

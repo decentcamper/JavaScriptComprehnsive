@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Example 5</title>
+
+    <!--The arguments object acts like an array (though it isn’t an instance of Array) in that you can-->
+    <!--access each argument using bracket notation (the first argument is arguments[0], the second is-->
+    <!--arguments[1], and so on) and determine how many arguments were passed in by using the length-->
+    <!--property. In the previous example, the sayHi() function’s fi rst argument is named name. The same-->
+    <!--value can be accessed by referencing arguments[0]. Therefore, the function can be rewritten-->
+    <!--without naming the arguments explicitly, like this:
+    -->
+
+    <script type="text/javascript">
+        function sayHi() {
+            alert("Hello " + arguments[0] + ", " + arguments[1]);
+        }
+
+        sayHi("Vivek", "how are you today?");
+    </script>
+
+    <!--In this example there are no named arguments. The name and message-->
+    <!--arguments have been removed, yet the function will behave appropriately. This illustrates an-->
+    <!--important point about functions in ECMAScript: named arguments are a convenience, not a-->
+    <!--necessity. Unlike in other languages, naming your arguments in ECMAScript does not create a-->
+    <!--function signature that must be matched later on; there is no validation against named arguments.-->
+</head>
+<body>
+
+</body>
+</html>

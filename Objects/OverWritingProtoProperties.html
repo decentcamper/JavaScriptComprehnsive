@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+
+        function Gadget(name) {
+            this.name = name;
+        }
+        Gadget.prototype.name = 'foo';
+
+       // Creating a new object and accessing its name property gives you the object's own name property.
+         var toy = new Gadget('camera');
+        alert(toy.name); //"camera"
+       // If you delete this property, the prototype's property with the same name"shines through":
+        delete toy.name; //true
+        alert(toy.name); //”foo”
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

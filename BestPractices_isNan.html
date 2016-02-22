@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+
+<pre class="prettyprint">
+    <p>The isNaN() function returns true if the value is NaN (Not-a-Number), and false if not.
+        Click the button to check whether a number is an illegal number.</p>
+</pre>
+<button onclick="myFunction()">Click to Try isNaN()</button>
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var a = 'isNaN(123)&nbsp >> &nbsp' + isNaN(123) + "<br>";
+        var b = 'isNaN(-1.23)&nbsp >> &nbsp' + isNaN(-1.23) + "<br>";
+        var c = 'isNaN(5-2)&nbsp >> &nbsp' + isNaN(5-2) + "<br>";
+        var d = 'isNaN(0)&nbsp >> &nbsp' + isNaN(0) + "<br>";
+        var e = 'isNaN("Hello")&nbsp >> &nbsp'  + isNaN("Hello") + "<br>";
+        var f = 'isNaN("2005/12/12")&nbsp >> &nbsp' + isNaN("2005/12/12") + "<br>";
+        var g = 'isNaN("123abc")&nbsp >> &nbsp'   + isNaN("123abc") + "<br>";
+        var g = 'isNaN(123/0)&nbsp >> &nbsp'   + isNaN(123/0) + "<br>";
+
+        var res = a + b + c + d + e + f+ g;
+        document.getElementById("demo").innerHTML = res;
+    }
+</script>
+
+</body>
+</html>

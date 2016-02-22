@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--When no arguments are passed in, concat()-->
+    <!--simply clones the array and returns it.
+    If one or more arrays are passed in, concat() appends each-->
+    <!--item in these arrays to the end of the result.
+    If the values are not arrays, they are simply appended to-->
+    <!--the end of the resulting array.-->
+    <!--This code begins with the colors array containing three values.
+    The concat() method is called on-->
+    <!--colors, passing in the string “yellow” and an array containing “black” and “brown”. The result,-->
+    <!--stored in colors2, contains “red”, “green”, “blue”, “yellow”, “black”, and “brown”.-->
+    <!--The original array, colors, remains unchanged.-->
+
+    <title>Array Type Concat Example</title>
+    <script type="text/javascript">
+    
+        var colors = ["red", "green", "blue"];
+        var colors2 = colors.concat();
+        var colors3 = colors.concat("yellow", ["black", "brown"]);
+        
+        alert(colors);     //red,green,blue        
+        alert(colors2);    //red,green,blue,yellow,black,brown
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

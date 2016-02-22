@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Here, the join() method is used on the colors array to duplicate the output of toString(). By-->
+    <!--passing in a comma, the result is a comma-separated list of values. On the last line, double pipes are-->
+    <!--passed in, resulting in the string “red||green||blue”. If no value or undefined is passed into the-->
+    <!--join() method, then a comma is used as the separator.-->
+    <title>Array Type Join Example</title>
+    <script type="text/javascript">
+    
+        var colors = ["red", "green", "blue"];
+        alert(colors.join(","));      //red,green,blue
+        alert(colors.join("||"));     //red||green||blue
+        alert(colors.join());     //red||green||blue
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

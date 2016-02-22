@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--In this example, the colors array starts out with fi ve items. Calling slice() and passing in 1 yields-->
+    <!--an array with four items, omitting “red” because the operation began copying from position 1,-->
+    <!--which contains “green”. The resulting colors2 array contains “green”, “blue”, “yellow”, and-->
+    <!--“purple”. The colors3 array is constructed by calling slice() and passing in 1 and 4, meaning-->
+    <!--that the method will begin copying from the item in position 1 and stop copying at the item in-->
+    <!--position 3. As a result, colors3 contains “green”, “blue”, and “yellow”.-->
+
+    <title>Array Type Slice Example</title>
+    <script type="text/javascript">
+    
+        var colors = ["red", "green", "blue", "yellow", "purple"];
+        var colors2 = colors.slice(1);
+        var colors3 = colors.slice(1,4);
+        
+        alert(colors2);   //green,blue,yellow,purple
+        alert(colors3);   //green,blue,yellow
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+var doThis = function (num){
+    returns num++;
+}
+
+var doThat = function (num){
+    return num--;
+}
+
+var x = doThis(11); -- 12
+var y = doThat; --function dothat
+var z= doThat(x); -- 11
+x=y(z); -- 10
+y=x;-- y=10
+alert(doThat(z-y)) 0

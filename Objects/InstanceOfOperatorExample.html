@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instance of Operator Example</title>
+    <script type="text/javascript">
+        function hero(){}
+        var h = new hero();
+        var o = new Object();
+        var m = {}
+        alert(h instanceof hero);
+        alert(h instanceof Object);
+       alert(o instanceof Object);
+       alert(m instanceof Object);
+
+        function factory(name,age){
+            var adult;
+            if (age <21){
+                adult = false;
+
+            }else{
+
+                adult = true;
+            }
+            var o = new Object();
+            o.name = name;
+            o.age = age;
+            o.isAdult = adult;
+            return o;
+
+        }
+
+        var person1  = factory("UCSC",88);
+        console.log(person1.isAdult);
+        var person2  = factory("UCSC1",19);
+        console.log(person2.isAdult);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

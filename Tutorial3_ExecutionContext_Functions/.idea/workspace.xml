@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3090c43f-5f49-4b80-9c9c-28aa2cc2ed82" name="Default" comment="" />
+    <ignored path="VariableScopeAndMemory.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="VariableScopeAndMemory" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="FunctionInitializationExample01.htm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionInitializationExample01.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="7" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="432">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CallingFunctionFromALink.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Labs/CallingFunctionExamples/CallingFunctionFromALink.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="576">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CallingFuncitonFromAnEvent.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Labs/CallingFunctionExamples/CallingFuncitonFromAnEvent.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="432">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FunctionTypeExample01.htm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionTypeExample01.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="39" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="720">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FunctionExample05.htm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample05.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="648">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FunctionExample06.htm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample06.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="24" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="486">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FunctionExample03.htm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample03.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="7" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="540">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FunctionDeclarationExample01.htm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionDeclarationExample01.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="47" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="450">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FunctionAsAnArgumentExample01.htm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionAsAnArgumentExample01.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="10" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="738">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Alex.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/StudentProblems/Alex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="70" selection-start="128" selection-end="186" vertical-scroll-proportion="0.15126051" vertical-offset="0" max-vertical-offset="833">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Labs/Lab_Functions_3.html" />
+        <option value="$PROJECT_DIR$/ExecutionContextExample04.htm" />
+        <option value="$PROJECT_DIR$/ExecutionContextExample07.htm" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionDeclarationExample01.htm" />
+        <option value="$PROJECT_DIR$/Labs/CallingFunctionExamples/CallingFunctionFromALink.html" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionTypeExample01.htm" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/Just.js" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionTypeCallExample01.htm" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionTypeBindMethodExample01.htm" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/CallBackExample.html" />
+        <option value="$PROJECT_DIR$/ExecutionContextExample01.htm" />
+        <option value="$PROJECT_DIR$/ExecutionContextExample02.htm" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionInitializationExample01.htm" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample05.htm" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample06.htm" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/Just.html" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/SelfInvokingFunctions.html" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/CopyingValues.html" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/CopyingValues_Reference.html" />
+        <option value="$PROJECT_DIR$/FunctionArgumentsExample02.htm" />
+        <option value="$PROJECT_DIR$/ExecutionContextExample05.htm" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionAsAnArgumentExample01.htm" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionTypeThisExample01.htm" />
+        <option value="$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionTypeApplyMethodExample01.htm" />
+        <option value="$PROJECT_DIR$/StudentProblems/Alex.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="3840" />
+    <option name="height" value="978" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>ActionScript specificJavaScript</id>
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Cucumber</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Data flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralCoffeeScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>JsTestDriverJavaScript</id>
+          </State>
+          <State>
+            <id>LESS</id>
+          </State>
+          <State>
+            <id>Naming conventionsJavaScript</id>
+          </State>
+          <State>
+            <id>Node.jsJavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCoffeeScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>SASS/SCSS</id>
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+          <State>
+            <id>XSLT</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VariableScopeAndMemory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VariableScopeAndMemory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VariableScopeAndMemory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VariableScopeAndMemory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VariableScopeAndMemory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudentProblems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VariableScopeAndMemory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VariableScopeAndMemory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Labs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VariableScopeAndMemory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VariableScopeAndMemory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionDefinition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/UCSC/CodeToBeUploaded/Tutorial4" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/FunctionDefinition/FunctionBasics" />
+      <recent name="$PROJECT_DIR$/Labs" />
+      <recent name="$PROJECT_DIR$/FunctionDefinition" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3090c43f-5f49-4b80-9c9c-28aa2cc2ed82" name="Default" comment="" />
+      <created>1361308082722</created>
+      <updated>1361308082722</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="3840" height="978" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3346426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample07.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="21" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="675" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample08.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="7" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="550" max-vertical-offset="700" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionTypeThisExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="950" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/Just.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="21" selection-start="311" selection-end="371" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="1025" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionTypeApplyMethodExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="38" selection-start="918" selection-end="918" vertical-scroll-proportion="0.0" vertical-offset="650" max-vertical-offset="1000" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/CallBackExample.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="48" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0" vertical-offset="500" max-vertical-offset="1075" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/CallBackExample.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="30" selection-start="1137" selection-end="1137" vertical-scroll-proportion="-16.911764" vertical-offset="0" max-vertical-offset="1075" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExecutionContextExample02.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="815" selection-end="815" vertical-scroll-proportion="-8.823529" vertical-offset="0" max-vertical-offset="1350" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExecutionContextExample03.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="27" selection-start="225" selection-end="226" vertical-scroll-proportion="-6.617647" vertical-offset="0" max-vertical-offset="775" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample07.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="21" selection-start="192" selection-end="192" vertical-scroll-proportion="0.21793275" vertical-offset="0" max-vertical-offset="803" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample09.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="837" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample10.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="875" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionReturningFunctionExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="44" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="325" max-vertical-offset="1000" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionTypeBindMethodExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="9" selection-start="471" selection-end="471" vertical-scroll-proportion="0.55886155" vertical-offset="143" max-vertical-offset="950" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/Just.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/Just.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="9" selection-start="280" selection-end="280" vertical-scroll-proportion="0.5174644" vertical-offset="0" max-vertical-offset="1025" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionTypeCallExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="30" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1675" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Labs/Lab_Function_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="7" selection-start="388" selection-end="388" vertical-scroll-proportion="-9.558824" vertical-offset="0" max-vertical-offset="475" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Labs/Lab_Functions_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="814" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Labs/Lab_Functions_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="814" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeterminingTypeExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="814" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExecutionContextExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="353" selection-end="353" vertical-scroll-proportion="-11.029411" vertical-offset="0" max-vertical-offset="700" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/SelfInvokingFunctions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="-7.352941" vertical-offset="0" max-vertical-offset="525" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DynamicPropertiesExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="238" selection-end="238" vertical-scroll-proportion="-6.617647" vertical-offset="0" max-vertical-offset="500" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DynamicPropertiesExample02.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="31" selection-start="199" selection-end="199" vertical-scroll-proportion="-5.147059" vertical-offset="0" max-vertical-offset="475" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/CopyingValues_Primitive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="-1.4705882" vertical-offset="0" max-vertical-offset="600" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/CopyingValues_Reference.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="40" selection-start="250" selection-end="250" vertical-scroll-proportion="-2.9411764" vertical-offset="0" max-vertical-offset="750" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionArgumentsExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="29" selection-start="1033" selection-end="1033" vertical-scroll-proportion="-11.1470585" vertical-offset="146" max-vertical-offset="875" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionArgumentsExample02.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="26" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-19.117647" vertical-offset="0" max-vertical-offset="1275" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/08.01.defining_functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/GlobalContextExample.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="7" selection-start="506" selection-end="506" vertical-scroll-proportion="-8.823529" vertical-offset="0" max-vertical-offset="450" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExecutionContextExample04.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="6" selection-start="644" selection-end="644" vertical-scroll-proportion="-12.882353" vertical-offset="12" max-vertical-offset="775" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExecutionContextExample05.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="640" selection-end="640" vertical-scroll-proportion="-14.3529415" vertical-offset="87" max-vertical-offset="850" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExecutionContextExample06.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="27" selection-start="649" selection-end="649" vertical-scroll-proportion="-9.558824" vertical-offset="0" max-vertical-offset="875" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExecutionContextExample07.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="8" selection-start="574" selection-end="574" vertical-scroll-proportion="-11.029411" vertical-offset="0" max-vertical-offset="800" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="6" selection-start="294" selection-end="294" vertical-scroll-proportion="-9.558824" vertical-offset="0" max-vertical-offset="550" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample02.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="837" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample04.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="824" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample03.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="7" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionDeclarationExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="47" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionInitializationExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="7" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Labs/CallingFunctionExamples/CallingFunctionFromALink.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Labs/CallingFunctionExamples/CallingFuncitonFromAnEvent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionTypeExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="39" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample05.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample06.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="24" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionExample08.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="7" selection-start="449" selection-end="449" vertical-scroll-proportion="0.7412399" vertical-offset="0" max-vertical-offset="742" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionTypeThisExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="25" selection-start="916" selection-end="916" vertical-scroll-proportion="0.68587106" vertical-offset="25" max-vertical-offset="1000" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionTypeApplyMethodExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="43" selection-start="753" selection-end="753" vertical-scroll-proportion="-9.558824" vertical-offset="125" max-vertical-offset="1050" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunctionDefinition/FunctionBasics/FunctionAsAnArgumentExample01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="10" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentProblems/Alex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="70" selection-start="128" selection-end="186" vertical-scroll-proportion="0.15126051" vertical-offset="0" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

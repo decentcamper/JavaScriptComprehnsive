@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--In this code, the radio buttons all have a name attribute of “color” even
+    though their IDs are-->
+    <!--different. The IDs allow the <label> elements to be applied to
+    the radio buttons, and the name-->
+    <!--attribute ensures that only one of the three values will
+    be sent to the server. These radio buttons can-->
+    <!--all then be retrieved using the following line of code:-->
+    <!--var radios = document.getElementsByName(“color”);-->
+    <!--As with getElementsByTagName(), the getElementsByName() method returns an-->
+    <!--HTMLCollection. In this context, however, the namedItem()
+     method always retrieves the fi rst item-->
+    <!--(since all items have the same name).-->
+    <title>getElementsByName() Example</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Which color do you prefer?</legend>
+        <ul>
+            <li><input type="radio" value="red" name="color" id="colorRed">
+                <label for="colorRed">Red</label></li>
+            <li><input type="radio" value="green" name="color" id="colorGreen">
+                <label for="colorGreen">Green</label></li>
+            <li><input type="radio" value="blue" name="color" id="colorBlue">
+                <label for="colorBlue">Blue</label></li>
+        </ul>
+    </fieldset>
+    <input type="button" value="Get Radios" onclick="getRadios()">
+    <script type="text/javascript">
+        function getRadios(){
+            alert("Radio count: " + document.getElementsByName("color").length);
+        }
+    
+    </script>
+</body>
+</html>

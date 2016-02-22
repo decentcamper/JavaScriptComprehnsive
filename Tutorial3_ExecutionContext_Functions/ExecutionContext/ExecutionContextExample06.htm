@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--When the function getColor() is called in this example, the-->
+    <!--variable color is referenced. At that point, a two-step search begins.-->
+    <!--First getColor()’s variable object is searched for an identifier named-->
+    <!--color. When it isn’t found, the search goes to the next variable-->
+    <!--object (from the global context) and then searches for an identifi er-->
+    <!--named color. Because that variable object is where the variable is-->
+    <!--defi ned, the search ends.-->
+    <title>Execution Context Example 6</title>
+    <script type="text/javascript">
+        var color = "blue";
+        
+        function getColor(){
+             //var color = "test";
+            return color;
+        }
+        
+        alert(getColor());  //"blue"
+
+
+      
+    </script>
+
+</head>
+<body>
+  
+</body>
+</html>

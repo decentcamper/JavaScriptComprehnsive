@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Even though the values in this example begin in correct numeric order,
+    the sort() method changes-->
+    <!--that order based on their string equivalents. So even though 5 is less than 10,
+     the string “10” comes-->
+    <!--before “5” when doing a string comparison,
+    so the array is updated accordingly. Clearly, this is-->
+    <!--not an optimal solution in many cases, so the sort() method allows you to pass in a comparison-->
+    <!--function that indicates which value should come before which.-->
+    <!--A comparison function accepts two arguments and returns a negative number
+    if the fi rst argument-->
+    <!--should come before the second,
+    a zero if the arguments are equal, or a positive number if the fi rst-->
+    <!--argument should come after the second.-->
+
+    <title>Array Type Example 14</title>
+    <script type="text/javascript">
+        var values = [0, 1, 5, 10, 15];
+        values.sort();
+        alert(values);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

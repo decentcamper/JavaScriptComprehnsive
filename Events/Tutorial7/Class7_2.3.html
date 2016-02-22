@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Preloading Images</title>
+<h2>&nbsp;&nbsp;This Is Baby William</h2> 
+<script type="text/javascript"> 
+        var basePath = "../images/";
+        console.log(document.images);
+		if(document.images){ 
+        	var baby1=new Image();          // Preload an image 
+             	baby1.src= basePath + "baby-1.jpg"; 
+          	var baby2=new Image();         // Preload an image 
+             	baby2.src= basePath +  "baby-2.gif"; 
+               } 
+            </script> 
+</head>
+<body bgcolor="cornflowerblue">
+	<a href="#" onMouseOver="document.willy.src=baby1.src;" onMouseOut="document.willy.src=baby2.src;"> 
+    <img name="willy" src=" ../images/baby-1.jpg" align="left" alt="baby" border=2 hspace="10" width="220" height="250"> 
+
+</body>
+</html>

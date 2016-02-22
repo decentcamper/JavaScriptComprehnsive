@@ -1,0 +1,22 @@
+
+<ul>
+  <li ng-repeat='chapter in chapters | orderBy:"title"'>
+    <h2>{{chapter.title}}</h2>
+    <p>{{chapter.summary}}</p>
+    <p>
+      <a href='#/chapter/{{chapter.id}}'>
+        {{chapter.notes.length}}
+        <ng-pluralize count='chapter.notes.length'
+          when='{"1": "note", "other": "notes"}'>
+        </ng-pluralize>
+      </a>
+      |
+      <a href='#/addNote/{{chapter.id}}'>add note</a>
+    </p>
+<div gb-note-list notes='chapter.notes'
+  orderBy='id'
+  show='chapter.id == selectedChapterId'
+  deleteNoteHandler='onDelete'>
+</div>
+  </li>
+</ul>

@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js'></script>
+    <title>AngularJS Color Picker</title>
+  </head>
+
+    <h1 style="color: rgb(112,113,114)"></h1>
+    <h1 style='color: rgb({{r}},{{g}},{{b}});'>Drag to change colour:</h1>
+    <input type='range' min='0' max='255' step='1' ng-model='r'>
+    <input type='range' min='0' max='255' step='1' ng-model='g'>
+    <input type='range' min='0' max='255' step='1' ng-model='b'>
+  </body>
+</html>

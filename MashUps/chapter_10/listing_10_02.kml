@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <name>Cities in Pennsylvania</name>
+  <Placemark id="US_PA_Allentown">
+    <name>Allentown</name>
+    <description><![CDATA[
+      Population 105339
+    ]]></description>
+    <Point>
+      <coordinates>-75.4906,40.6083,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Altoona">
+    <name>Altoona</name>
+    <description><![CDATA[
+      Population 52531
+    ]]></description>
+    <Point>
+      <coordinates>-78.395,40.5186,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Bethel+Park">
+    <name>Bethel Park</name>
+    <description><![CDATA[
+      Population 34287
+    ]]></description>
+    <Point>
+      <coordinates>-80.0397,40.3275,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Bethlehem">
+    <name>Bethlehem</name>
+    <description><![CDATA[
+      Population 72821
+    ]]></description>
+    <Point>
+      <coordinates>-75.3708,40.6258,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Chester">
+    <name>Chester</name>
+    <description><![CDATA[
+      Population 39467
+    ]]></description>
+    <Point>
+      <coordinates>-75.3561,39.8494,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Easton">
+    <name>Easton</name>
+    <description><![CDATA[
+      Population 27725
+    ]]></description>
+    <Point>
+      <coordinates>-75.2211,40.6883,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Erie">
+    <name>Erie</name>
+    <description><![CDATA[
+      Population 108398
+    ]]></description>
+    <Point>
+      <coordinates>-80.0853,42.1292,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Harrisburg">
+    <name>Harrisburg</name>
+    <description><![CDATA[
+      Population 54238
+    ]]></description>
+    <Point>
+      <coordinates>-76.8847,40.2736,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Johnstown">
+    <name>Johnstown</name>
+    <description><![CDATA[
+      Population 27318
+    ]]></description>
+    <Point>
+      <coordinates>-78.9222,40.3267,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Lancaster">
+    <name>Lancaster</name>
+    <description><![CDATA[
+      Population 57721
+    ]]></description>
+    <Point>
+      <coordinates>-76.3058,40.0378,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Lebanon">
+    <name>Lebanon</name>
+    <description><![CDATA[
+      Population 25515
+    ]]></description>
+    <Point>
+      <coordinates>-76.4117,40.3408,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_McKeesport">
+    <name>McKeesport</name>
+    <description><![CDATA[
+      Population 25121
+    ]]></description>
+    <Point>
+      <coordinates>-79.8644,40.3478,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Monroeville">
+    <name>Monroeville</name>
+    <description><![CDATA[
+      Population 29061
+    ]]></description>
+    <Point>
+      <coordinates>-79.7883,40.4211,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_New+Castle">
+    <name>New Castle</name>
+    <description><![CDATA[
+      Population 27798
+    ]]></description>
+    <Point>
+      <coordinates>-80.3472,41.0036,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Norristown">
+    <name>Norristown</name>
+    <description><![CDATA[
+      Population 32069
+    ]]></description>
+    <Point>
+      <coordinates>-75.3403,40.1214,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Philadelphia">
+    <name>Philadelphia</name>
+    <description><![CDATA[
+      Population 1524249
+    ]]></description>
+    <Point>
+      <coordinates>-75.1642,39.9522,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Pittsburgh">
+    <name>Pittsburgh</name>
+    <description><![CDATA[
+      Population 358883
+    ]]></description>
+    <Point>
+      <coordinates>-79.9961,40.4406,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Reading">
+    <name>Reading</name>
+    <description><![CDATA[
+      Population 78246
+    ]]></description>
+    <Point>
+      <coordinates>-75.9272,40.3356,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Scranton">
+    <name>Scranton</name>
+    <description><![CDATA[
+      Population 77964
+    ]]></description>
+    <Point>
+      <coordinates>-75.6628,41.4089,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_State+College">
+    <name>State College</name>
+    <description><![CDATA[
+      Population 39587
+    ]]></description>
+    <Point>
+      <coordinates>-77.8603,40.7933,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Wilkes-Barre">
+    <name>Wilkes-Barre</name>
+    <description><![CDATA[
+      Population 45645
+    ]]></description>
+    <Point>
+      <coordinates>-75.8817,41.2458,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_Williamsport">
+    <name>Williamsport</name>
+    <description><![CDATA[
+      Population 31854
+    ]]></description>
+    <Point>
+      <coordinates>-77.0014,41.2411,0</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark id="US_PA_York">
+    <name>York</name>
+    <description><![CDATA[
+      Population 45657
+    ]]></description>
+    <Point>
+      <coordinates>-76.7281,39.9625,0</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>

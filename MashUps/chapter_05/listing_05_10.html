@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Your Map and the Real World</title>
+    <link type="text/css" rel="stylesheet" href="listing_05_13.css" />
+    <script type="text/javascript"
+           src="http://maps.google.com/maps?file=api&amp;v=2.124&amp;key=ABQIAAAAN_IKAOv-fz9s2G9ZOihkhRQRiYyMmFOXXgCIe1BMmHtWUkPqiRROh48Y3J93_SbAzngd63KZMurFqQ"></script>
+    <script type="text/javascript" src="listing_05_14.js"></script>
+  </head>
+  <body onload="loadMap()" onunload="GUnload()">
+    <div id="map"></div>
+    <div id="sidebar">
+      <h2>Route Finder</h2>
+      <p>
+        Start Address
+        <button onclick="geocode()">Find</button>
+        <input type="text" id="start" />
+      </p>
+      <p>
+        Destination
+        <select id="finish" onchange="destinationChange()">
+          <option value="">Please select:</option>
+          <option value="37.809, -122.4146">The Embarcadero</option>
+          <option value="37.79516, -122.39379">Ferry Terminal</option>
+          <option value="37.76976, -122.46765">Golden Gate Park</option>
+          <option value="37.80733, -122.47411">The Presidio</option>
+          <option value="37.79482, -122.40277">Transamerica Pyramid</option>
+        </select>
+        <button onclick="getDirections()">Directions</button>
+        <button onclick="getView()">Streetview</button>
+      </p>
+      <p>
+        <input type="checkbox" id="show_traffic" checked="checked"
+               onclick="toggleTraffic()" />
+        Show Traffic
+      </p>
+      <div id="directions"></div>
+    </div>
+  </body>
+</html>

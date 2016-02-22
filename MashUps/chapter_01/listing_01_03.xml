@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:georss="http://www.georss.org/georss">
+  <channel>
+    <title>National Park Tour</title>
+    <link>http://sterlingudell.com/bgmm/</link>
+    <description>Simple RSS feed with geodata</description>
+    <item>
+      <title>Crater Lake</title>
+      <link>http://sterlingudell.com/bgmm/chapter_01/listing_01_03.xml</link>
+      <description>A deep blue lake in the Cascade Mountains.</description>
+      <georss:point>42.9413 -122.1089</georss:point>
+    </item>
+  </channel>
+</rss>

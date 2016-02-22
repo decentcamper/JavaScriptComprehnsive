@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>The context referenced by 'this' keyword in JavasSript is different.</title>
+
+</head>
+<body>
+
+<p>What it does is really simple. when you click the button, the button will be disabled automatically.
+    First when you try to hook up the events in this way button.onclick = function(),
+    onclick event will be triggered by clicking the button, however, the button will not be disabled
+    because there's no explicit binding between button.onclick and onclick event handler.
+    If you debug see the 'this' object, you can see it refers to 'window' object.
+    Secondly, if you comment btnSubmit.onclick = disable();
+    and uncomment //btnSubmit.addEventListener('click', disable, false);
+    you can see that the button is disabled because with this way there's explicit binding
+    between button.onclick event and onclick event handler.
+    If you debug into disable function, you can see 'this' refers to the button control rather than the window.</p>
+<input id="btnSubmit" type="button" value="Submit" />
+<script>
+    function disable() {
+        this.disabled = true;
+    }
+    var btnSubmit = document.getElementById('btnSubmit');
+    //btnSubmit.onclick = disable();
+    btnSubmit.addEventListener('click', disable, false);
+
+
+</script>
+</body>
+</html>

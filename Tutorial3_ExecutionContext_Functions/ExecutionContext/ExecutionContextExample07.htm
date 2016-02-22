@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Given this search process, referencing local variables automatically-->
+    <!--stops the search from going into another variable object. This means-->
+    <!--that identifi ers in a parent context cannot be referenced if an identifi er-->
+    <!--in the local context has the same name, as in this example:-->
+    <title>Execution Context Example 7</title>
+    <script type="text/javascript">
+        var color1 = "blue";
+        
+        function getColor(){
+            var color = "red";
+            return color;
+        }
+        
+        alert(getColor());  //"red"
+
+
+      
+    </script>
+
+</head>
+<body>
+  
+</body>
+</html>

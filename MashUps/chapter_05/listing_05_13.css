@@ -1,0 +1,39 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 90%;
+}
+
+#map {
+  width: 74%;
+  height: 100%;
+}
+
+#sidebar {
+  position: absolute;
+  left: 74%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  padding: 1em;
+}
+
+h1 {
+  margin: 0;
+  font-size: 220%;
+}
+h2 {
+  margin: 0;
+  font-size: 125%;
+}
+
+.streetViewer {
+  width: 350px;
+  height: 250px;
+}

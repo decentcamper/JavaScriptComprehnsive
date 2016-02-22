@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--The first part of this example shows the typical use of a constructor,
+    to create a new object via the-->
+    <!--new operator. The second part shows what happens when the Person()
+    function is called without-->
+    <!--the new operator: the properties and methods get added to the window object.
+    Remember that the-->
+    <!--this object always points to the Global object (window in web browsers) when
+     a function is called-->
+    <!--without an explicitly set this value
+    (by being an object method or through call()/apply()). So-->
+    <!--after the function is called, the sayName() method
+    can be called on the window object, and it will-->
+    <!--return “Greg”.
+    The Person() function can also be called within the scope of a particular object-->
+    <!--using call() (or apply()).
+    In this case, it’s called with a this value of the object o, which then gets-->
+    <!--assigned all of the properties and the sayName() method.-->
+
+    <title>Constructor Pattern Example 2</title>
+    <script type="text/javascript">
+    
+        function Person(name, age, job){
+            this.name = name;
+            this.age = age;
+            this.job = job;
+            this.sayName = function(){
+                alert(this.name);
+            };
+        }
+
+        function Person(name, age, job){
+            name = name;
+            age = age;
+            job = job;
+            sayName = function(){
+                alert(this.name);
+            };
+        }
+
+
+        var person = new Person("Nicholas", 29, "Software Engineer");
+        var person1 = new Person("Vivek", 29, "Software Engineer");
+        var person2 = new Person("Rick", 29, "Software Engineer");
+        var person3 = new Person("Nick", 29, "Software Engineer");
+        person.sayName();   //"Nicholas"
+        alert(person.const)
+
+
+        Person("Greg", 27, "Doctor");
+        window.sayName();
+        
+        var o = new Object();
+        Person.call(o, "Kristen", 25, "Nurse");
+        o.sayName();    //"Kristen"
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

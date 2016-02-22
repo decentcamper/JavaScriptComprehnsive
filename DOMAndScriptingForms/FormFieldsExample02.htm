@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--This code attaches an event handler on the form for the submit event. When the event fi res, the-->
+    <!--submit button is retrieved and its disabled property is set to true. Note that you cannot attach an-->
+    <!--onclick event handler to the submit button to do this because of a timing issue across browsers:-->
+    <!--some browsers fi re the click event before the form’s submit event, some after. For browsers that-->
+    <!--fire click first, the button will be disabled before the submission occurs, meaning that the form-->
+    <!--will never be submitted. Therefore it’s better to disable the submit button using the submit event.-->
+    <!--This approach won’t work if you are submitting the form without using a submit button, because, as-->
+    <!--stated before, the submit event is fired only by a submit button.-->
+    <title>Form Fields Example</title>
+    <script type="text/javascript" src="EventUtil.js"></script>
+</head>
+<body>
+    <form method="post" action="javascript:alert('Form submitted!')" id="myForm">
+        <ul>
+            <li><input type="radio" name="color" value="red">Red</li>
+            <li><input type="radio" name="color" value="green">Green</li>
+            <li><input type="radio" name="color" value="blue">Blue</li>
+        </ul>
+        <input type="submit" value="Submit Form" name="submit-btn">
+        <button type="button">Whatever</button>
+    </form>     
+    <script type="text/javascript">
+
+        window.onload = function(){
+            var form = document.forms[0];
+            form.addEventListener('submit',function(){
+                var submit_button = form.elements['submit-btn'];
+                submit_button.disabled = true;
+
+
+            })
+
+        }
+        //(function(){
+
+
+
+            
+            //Code to prevent multiple form submissions
+//            EventUtil.addHandler(form, "submit", function(event){
+//                event = EventUtil.getEvent(event);
+//                var target = EventUtil.getTarget(event);
+//
+//                //get the submit button
+//                var btn = target.elements["submit-btn"];
+
+            
+                //disable it
+
+                
+            //});
+
+
+
+       // })();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Object Example</title>
+</head>
+<body>
+    <p>This example serializes an object and then parses that string into another object.</p>
+    <script type="text/javascript">
+
+        var book = {
+                       "title": "JavaScript",
+                        "authors": [
+                            "Vivek"
+                        ],
+                        edition: 3,
+                        year: 2011,
+                        myMethod:function(){
+                            alert(this.title);
+
+                        }
+                   };
+        book.myMethod();
+        var jsonText = JSON.stringify(book);
+        alert(jsonText);
+        var bookCopy = JSON.parse(jsonText);
+        Object.keys(bookCopy);
+        for(var prop in bookCopy){
+            alert("Property --> " + prop + "  The Value--> " + bookCopy[prop]);
+
+        }
+        //alert(bookCopy)
+    </script>
+
+
+</body>
+</html>

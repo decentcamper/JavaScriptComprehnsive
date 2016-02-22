@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--The call() method exhibits the same behavior as apply(), but arguments are passed to it-->
+    <!--differently. The fi rst argument is the this value, but the remaining arguments are passed directly-->
+    <!--into the function. Using call() arguments must be enumerated specifi cally, as in this example:-->
+    <title>Function Type call() Method Example</title>
+    <script type="text/javascript">
+        
+        function sum(num1, num2){
+            return num1 + num2;
+        }
+        
+        function callSum(num1, num2){
+            return sum.call(this, num1, num2);
+        }
+        
+        alert(callSum(10,10));   //20
+
+    </script>
+
+    <!--Using the call() method, callSum() must pass in each of its arguments explicitly. The result is-->
+    <!--the same as using apply(). The decision to use either apply() or call() depends solely on the-->
+    <!--easiest way for you to pass arguments into the function. If you intend to pass in the arguments-->
+    <!--object directly or if you already have an array of data to pass in, then apply() is the better choice;-->
+    <!--otherwise, call() may be a more appropriate choice. (If there are no arguments to pass in, these-->
+    <!--methods are identical.)-->
+</head>
+<body>
+
+</body>
+</html>

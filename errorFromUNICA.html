@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="center">
+<!--	UI 3.2 Vanilla template	Owner: Collaboration Business Technologies and Web Security Team	Revision : 2.1	Change log :		2011-10-13 : Created Rev 2.0		2012-03-14 : Login Page Created using template 2.1 (predeshp) -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <title>Secure Login Page</title>
+</head>
+<body class="center">
+<div id="c-root" class="yui-t2">
+    <div id="c-top">
+        <!-- *** Begin: CEC Header *** -->
+        <style type="text/css" media="screen">		<!--		@import url("/autho/forms/cecassets/cec/framework/3.2.0/renditions/lite/c/cec.css");		-->		</style>
+        <script type="text/javascript">		  function setDefaults() {			var searchElem = document.getElementById('q');			searchElem.value='Search';			searchElem.blur();			var dirElem = document.getElementById('cec-directory');			dirElem.value='Directory';			dirElem.blur();		  }		  if (window.addEventListener) {			window.addEventListener('readystatechange', setDefaults, true);		  }		  else if (window.attachEvent) {			window.attachEvent('onload', setDefaults);		  }		</script>
+        <div id="cec-header">
+            <a href="http://wwwin.cisco.com" title="CEC Home" id="cec-logo"></a>
+            <div id="cec-header-right">
+                <div id="cec-utilitybar">
+                    <ul>
+                        <li id="cec-iwe"><a href="http://iwe.cisco.com" class="border" title="Cisco Integrated Work Experience (IWE)">IWE</a></li>
+                        <li id="cec-sites"><a href="http://wwwin.cisco.com/pcgi-bin/cec/redirect.cgi?link_id=36887" class="border" title="Cisco internal and external websites">Cisco Sites and NavTools</a></li>
+                        <li id="cec-emergencies"><a href="http://wwwin.cisco.com/pcgi-bin/cec/redirect.cgi?link_id=12353" class="border">Emergencies</a></li>
+                        <li id="cec-search-li">
+                            <form name="cecSearch" action="http://wwwin-tools.cisco.com/cecsearch/search.do" enctype="multipart/form-data" method="post">
+                                <a class="border"><input name="term" type="text" size="15" value="Search" id="q" accesskey="s" title="Search CEC" onfocus="this.className='focus';if(this.value == 'Search'){this.value = ''};" onblur="this.className='';if(this.value ==''){this.value='Search'};" autocomplete="off" onload="this.value='Search';" /> &nbsp;<input type="submit" value="Go" class="button-go" /></a>
+                            </form> </li>
+                        <li id="cec-directory-li">
+                            <form action="http://wwwin-tools.cisco.com/dir/empquery.go" enctype="multipart/form-data">
+                                <a class="border"><input name="q" type="text" size="15" maxlength="40" value="Directory" id="cec-directory" accesskey="y" title="Directory" onfocus="this.className='focus';if(this.value == 'Directory'){this.value = ''};" onblur="this.className='';if(this.value == ''){this.value='Directory'};" autocomplete="off" onload="this.value='Directory';" /> &nbsp;<input type="submit" value="Go" id="cec-directory-go" class="button-go" /></a>
+                            </form></li>
+                    </ul>
+                </div>
+                <!-- cec-utilitybar -->
+                <h5>&nbsp;</h5>
+                <h5>&nbsp;</h5>
+                <h1 id="page-title">Log In</h1>
+            </div>
+            <!-- cec-header-right -->
+            <div id="toolkit-bar">
+                <!-- if you have no feedback or help, then place comments around the A elements inside the below two LI elements. DO NOT COMMENT OUT THE LI's -->
+                <ul>
+                    <li>
+                        <!-- <a href="http://wwwin.cisco.com/cgi-bin/cec/mylinks/editor.cgi" onclick="document.location=this.href+'?addpage=true&bookmarkUrl='+document.location+'&bookmarkTitle='+document.title; return false" target="_blank" title="Add this page to My Links"><img src="/autho/forms/cecassets/cec/framework/3.2.0/i/btn_addLink_active.png" alt="Bookmark Page" border="0"/></a> --> </li>
+                    <li><a href="http://wikicentral.cisco.com/pages/viewpage.action?pageId=331006813" title="Help"><img src="/autho/forms/cecassets/cec/framework/3.2.0/i/btn_help_active.png" alt="Help" border="0" /></a></li>
+                    <li><a href="http://wwwin.cisco.com/pcgi-bin/feedback/cecfd.pl" title="Submit a question, comment, or request for correction to the owner of this webpage"><img src="/autho/forms/cecassets/cec/framework/3.2.0/i/btn_feedback_active.png" alt="Feedback" border="0" /></a></li>
+                </ul>
+            </div>
+            <!-- toolkit-bar -->
+        </div>
+        <!-- cec-header -->
+        <!-- *** End CEC Header *** -->
+    </div>
+    <!-- c-top -->
+    <div id="c-middle">
+        <!-- *** Begin: Application content *** -->
+        <div class="cec-content" style="font-size:100%; margin-top:15px; zoom:1">
+            <div style="float:left; width:35%; margin-bottom:2px; margin-left:10px">
+                <h6>Login</h6>
+                <br />
+                <form method="POST" action="/autho/login/loginaction.html">
+                    <label><strong>CEC User ID</strong></label>
+                    <br />
+                    <input type="text" name="userid" id="userInput" />
+                    <br />
+                    <label><strong>Password</strong></label>
+                    <br />
+                    <input type="password" name="password" autocomplete="off" />
+                    <br />
+                    <br />
+                    <input type="submit" value="Login" />
+                </form>
+                <script type="text/javascript">document.getElementById('userInput').focus();</script>
+            </div>
+            <div style="float:right; width:60%; margin-bottom:1px; margin-right:20px">
+                <h4>About</h4>
+                <p align="justify">This login page provides SSL-enabled secure login method for internal Enterprise Web Applications. It also provides Single Sign-On (SSO) to web applications hosted by Cloud Service Providers. With a login page that is secured with an https connection, you can login less frequently per session and have seamless SSO experience.</p>
+                <p align="justify"><strong>Want to Switch Your CCI App to This Log In Page?</strong>For more information about using this log in functionality and how to engage, please view the <a href="http://wikicentral.cisco.com/display/SMOAM/FAQs">FAQ wiki</a>.</p>
+            </div>
+            <br clear="all" />
+            <div style="float:bottom; width:100%; margin-top:10px; margin-left:5px">
+                <div style="float:left; width:35%; margin-left:5px">
+                    <br />
+                    <p><a href="http://wwwin.cisco.com/it/services/accounts/password-reset.shtml">Forgot your password?</a></p>
+                    <p><a href="http://wikicentral.cisco.com/pages/viewpage.action?pageId=331006813">Trouble logging in?</a></p>
+                </div>
+                <div style="float:right; width:60%; margin-bottom:1px">
+                    <br />
+                    <!-- To publish a custom message on login page for communications to users, uncomment the below span tag and customize the message -->
+                    <!--						<span style="color: red"><h3 class="first">ATTENTION USERS</h3>This is a notification highlighting text or instructions. </span>-->
+                </div>
+            </div>
+        </div>
+        <!-- *** End: Application content *** -->
+    </div>
+    <!-- c-middle -->
+    <div id="c-bottom">
+        <!-- *** Begin: CEC Footer *** -->
+        <div id="cec-footer">
+            <div id="c-footer-text" class="x-panel-body">
+                Cisco Systems, Inc.
+                <span id="c-footer-security"><a target="_blank" href="http://wwwin.cisco.com/infosec/policies/classification.shtml">Cisco Confidential</a></span>
+            </div>
+            <div id="cec-contact-info">
+                Maintained by: Web Security Team
+                <span class="light-gray">&nbsp;|&nbsp;</span> Business Owner: ATS Security Services
+            </div>
+            <!-- comment out below p element if help and feedback are not available -->
+            <p id="footer-links">
+                <!-- comment out below line if help is not available --> <a target="_blank" href="http://wikicentral.cisco.com/pages/viewpage.action?pageId=331006813" id="cec-footer-help">Help</a> <span class="light-gray">|</span>
+                <!-- comment out below line if feedback is not available --> <a target="_blank" href="http://wwwin.cisco.com/pcgi-bin/feedback/cecfd.pl" id="cec-footer-feedback">Submit Feedback</a> </p>
+        </div>
+    </div>
+    <!-- cec-footer -->
+    <!-- *** End: CEC Footer *** -->
+</div>
+<!-- c-bottom -->
+<!-- c-root -->
+<iframe src="https://tools.cisco.com/autho/sclnup.html" frameborder="0" width="0" height="0"></iframe>
+<iframe src="https://www.cisco.com/autho/sclnup.html" frameborder="0" width="0" height="0"></iframe>
+<iframe src="https://software.cisco.com/autho/sclnup.html" frameborder="0" width="0" height="0"></iframe>
+<iframe src="https://papps.cisco.com/autho/sclnup.html" frameborder="0" width="0" height="0"></iframe>
+<iframe src="https://cisco-apps.cisco.com/autho/sclnup.html" frameborder="0" width="0" height="0"></iframe>
+<iframe src="https://apps.cisco.com/autho/sclnup.html" frameborder="0" width="0" height="0"></iframe>
+<!-- 	Notes:		1) there must be a 10px gap between the header and the contents as well as the footer and the contents.  Mainly just ensure there is some whitespace between the CEC UI and the application body		2) There are comments inside each included file, be sure to read them.-->
+</body>
+</html>

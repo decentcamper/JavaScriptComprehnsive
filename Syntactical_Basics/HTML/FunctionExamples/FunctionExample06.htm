@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Example 6</title>
+    <!--The arguments object can also be used to check the number of arguments passed into the function-->
+    <!--via the length property. The following example outputs the number of arguments passed into the-->
+    <!--function each time it is called:-->
+    <script type="text/javascript">
+        function howManyArgs() {
+            alert(arguments.length);
+        }
+
+
+
+        
+        howManyArgs("string", 45);    //2
+        howManyArgs();                //0
+        howManyArgs(12);              //1
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

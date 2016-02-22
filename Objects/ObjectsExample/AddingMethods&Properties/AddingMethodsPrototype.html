@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function Gadget(name, color) {
+            this.name = name;
+            this.color = color;
+            this.whatAreYou = function(){
+                return 'I am a ' + this.color + ' ' + this.name;
+            }
+        }
+
+        alert(Gadget.prototype);
+
+        var obj = {};
+        obj.price = 100;
+        obj.rating = 3;
+        obj.getInfo = function(){
+            return 'Rating: ' + this.name + ', price: ' + this.color;
+
+
+        };
+        Gadget.prototype = obj;
+
+////        Instead of adding to the prototype object, another way to achieve the above
+////        result is to overwrite the prototype completely, replacing it with an object of your choice:
+//
+//
+//        var o =  {
+//            price: 100,
+//            rating: 3,
+//            getInfo: function() {
+//                return 'Rating: ' + this.rating + ', price: ' + this.price;
+//            }
+//        }
+//        Gadget.prototype =o;
+
+        var gadgetAsObject = new Gadget("Fido","Green");
+        var gadgetAsObject2 = new Gadget("Fido2","Red");
+        alert(gadgetAsObject.getInfo());
+        alert(gadgetAsObject2.getInfo());
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Type this Example</title>
+    <script type="text/javascript">
+        
+        var color = "red";
+
+        function rugCleaner(cleaningSol,electricOutlet ){
+            // Just clean the room
+            alert(this.color);
+        }
+        var myRoom1 = { rugColor: "blue" , cleanSol: "Tide",outlet: "Number1" };
+        var myRoom2 = { rugColor: "green"};
+        var myRoom3 = { rugColor: "red"};
+
+        /*myRoom1.clean = rugCleaner;
+        myRoom2.clean = rugCleaner;
+        myRoom3.clean = rugCleaner;
+
+
+        myRoom1.clean();
+        myRoom1.clean = null;*/
+
+        var cleanSol = "Tide";
+        var outlet = "By the bed";
+
+   /*     myRoom1.clean = rugCleaner;
+        myRoom1.clean();
+        myRoom1.clean = null;*/
+
+        rugCleaner.call(myRoom1,myRoom1.cleanSol, myRoom1.outlet);
+        rugCleaner.call(myRoom2);
+        rugCleaner.call(myRoom3);
+
+
+        o.myPop = sayColor();
+        sayColor();     //red
+        o.myPop();   //
+
+
+//        sayColor.call(o,"Vick","Rick");
+//        sayColor.apply(o,["Vivek","Rivet"]);
+        
+        //o.someFunction = sayColor;
+       // o.someFunction();   //blue
+        //o.someFunction = null;
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

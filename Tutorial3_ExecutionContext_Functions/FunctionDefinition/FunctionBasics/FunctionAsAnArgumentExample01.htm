@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--The callSomeFunction() function is generic, so it doesn’t matter what function is passed in as-->
+    <!--the fi rst argument — the result will always be returned from the first argument being executed.-->
+    <!--Remember that to access a function pointer instead of executing the function, you must leave off the-->
+    <!--parentheses, so the variables add10 and getGreeting are passed into callSomeFunction() instead-->
+    <!--of their results being passed in.-->
+    <title>Function as an Argument Example</title>
+    <script type="text/javascript">
+        function callSomeFunction(passedInFunction, someArgument){
+           //return add(10);
+            //return getGreeting("Vivek");
+            return passedInFunction(someArgument);
+           
+        }
+
+       function add10(num){
+           return num + 10;
+       }
+    //add(10);
+        
+        var result1 = callSomeFunction(add10, 10);
+        alert(result1);   //20
+        
+        function getGreeting(name){
+            return "Hello, " + name;
+        }
+        
+        var result2 = callSomeFunction(getGreeting, "Vivek");
+        alert(result2);   //Hello, Vivek
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

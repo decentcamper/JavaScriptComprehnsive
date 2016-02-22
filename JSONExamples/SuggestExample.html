@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>First Ajax Script</title>
+    <link rel="stylesheet" type="text/css" href="./../css/ajaxStyle.css" />
+    <script type="text/javascript" src="./../js/ajaxCreateRequest.js">
+    </script>
+    <script type="text/javascript">
+        var ajaxRequest;
+        function goAjax(){
+            ajaxRequest = CreateRequestObject();
+            /* Cross browser check; Get a new XMLHttpRequest object */
+            if (ajaxRequest != false) {
+                /* If we got back a request object Create callback function to check state of the request*/
+                ajaxRequest.onreadystatechange = callBackHandler;
+                yourname = document.getElementById("username").value;
+                ajaxRequest.open("POST", "http://localhost:8080/Class9/AjaxExampleOne");
+                /*
+                 You need to have the headers of the requests set whenever youre using the post method since
+                 there can be more than one content types that you can pass using the post method
+                 */
+                ajaxRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                ajaxRequest.send("name=" + yourname);
+            } //End if
+            else {
+                alert("Browser problem was encounered!");
+            }
+        } // End ajaxFunction()
+        function callBackHandler(){
+
+            JSONObject jsonObj  = JSON.parse(request.responseText);
+            jsonObj.getPropertyValue()
+
+
+            if (ajaxRequest.readyState == 4) {
+                if (ajaxRequest.status == 200) {
+                    document.getElementById("message").innerHTML = ajaxRequest.responseText;
+                }
+            }
+
+
+
+        }
+    </script>
+</head>
+<body>
+<form name='myForm'>
+    Your name: <input type='text' onKeyUp="goAjax();" name='username' id='username' />
+    <br/>
+    <p>
+    <div id="message" class="divStyle">
+        <!-- This is where the Ajax output will be displayed -->
+    </div>
+    </p>
+</form>
+</body>
+</html>

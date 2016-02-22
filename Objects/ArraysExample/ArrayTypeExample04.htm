@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--This code sets the length of the colors array to 4 even though it contains only three items. Position 3-->
+    <!--does not exist in the array, so trying to access its value results in the special value undefined being-->
+    <!--returned.-->
+    <title>Array Type Example 4</title>
+    <script type="text/javascript">
+        
+        var colors = ["red", "blue", "green"];    //creates an array with three strings
+        colors.length = 4;
+        alert(colors[3]);        //undefined
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

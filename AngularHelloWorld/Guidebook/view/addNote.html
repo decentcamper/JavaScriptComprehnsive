@@ -1,0 +1,18 @@
+
+<form name='addNote'>
+  <label for='noteContent'>Enter a note about this chapter:</label>
+  <textarea id='noteContent' ng-model='note.content'></textarea>
+  <button ng-click='cancel()'>Cancel</button>
+  <button ng-click='createNote()' ng-disabled='!note.content'>Create Note</button>
+</form>
+
+<!--This is a little easier to process. We have a form, with a label,
+a field, and two buttons. It looks like we're expecting a couple of functions from our controller: cancel() and createNote().
+We also have an ng-model annotation on our text area.
+
+ng-model is used to set up a data model shared by a view and its controller.
+This isn't a persisted model; it's just a convenient way for the view and controller to share data.
+This feature is called data binding, and it's a topic we'll cover in detail later in this tutorial.
+For now, just think of ng-model as the view's way to set properties on $scope for the controller.
+
+You're probably still a little shaky on views.-->

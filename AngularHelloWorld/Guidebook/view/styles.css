@@ -1,0 +1,41 @@
+
+a, a:visited, a:active {
+  color: #69c;
+  text-decoration: none;
+}
+a:hover {
+  color: #69c;
+  text-decoration: underline;
+}
+ul {
+  width: 500px;
+  padding-left: 40px;
+}
+li {
+  list-style-type: none;
+  border-top: 1px solid #ccc;
+}
+ul.notes {
+  width: 460px;
+}
+ul.notes li div {
+  float: left;
+  padding: 5px 0 10px 0;
+  font-size: 0.8em;
+  color: #666;
+}
+ul.notes li div + div {
+  float: right;
+}
+ul.notes li p {
+  clear: both;
+}
+form {
+  padding-left: 15px;
+}
+textarea {
+  display: block;
+  margin: 5px 0;
+  width: 250px;
+  height: 100px;
+}

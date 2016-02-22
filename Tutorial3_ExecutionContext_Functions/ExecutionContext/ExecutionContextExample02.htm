@@ -1,0 +1,49 @@
+<!--There are three execution contexts in this code: global context,-->
+<!--the local context of changeColor(), and the local context of-->
+<!--swapColors(). The global context has one variable, color,-->
+<!--and one function, changeColor(). The local context of-->
+<!--changeColor() has one variable named anotherColor and one-->
+<!--function named swapColors(), but it can also access the variable-->
+<!--color from the global context. The local context of swapColors()-->
+<!--has one variable, named tempColor, that is accessible only within-->
+<!--that context. Neither the global context nor the local context of-->
+<!--swapColors() has access to tempColor. Within swapColors(),-->
+<!--though, the variables of the other two contexts are fully accessible,-->
+<!--because they are parent execution contexts.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Execution Context Example 2</title>
+    <script type="text/javascript">
+          
+        var color = "blue";
+        
+        function changeColor(){
+            var anotherColor = "red";
+        
+            function swapColors(){
+                var tempColor = anotherColor;
+                anotherColor = color;
+                color = tempColor;
+                
+                //color, anotherColor, and tempColor are all accessible here
+            }
+        
+            //color and anotherColor are accessible here, but not tempColor        
+            swapColors();
+        }
+        
+        changeColor();
+
+
+        //anotherColor and tempColor aren't accessible here, but color is
+        alert("Color is now " + color);
+
+    </script>
+
+</head>
+<body>
+  
+</body>
+</html>

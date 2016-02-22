@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--If the fi rst option in this select box is selected, the value of the field is
+    “Sunnyvale, CA”. If the-->
+    <!--option with the text “China” is selected,
+    then the fi eld’s value is an empty string because the value-->
+    <!--attribute is empty.
+    If the last option is selected, then the value is “Australia” because there is no-->
+    <!--value attribute specifi ed on the <option>.-->
+    <title>Selectbox Example</title>
+    <script type="text/javascript" src="EventUtil.js"></script>
+</head>
+<body>
+    
+    <form method="post" action="javascript:alert('Form submitted!')" id="myForm">            
+        <div>
+            <label for="selLocation">Where do you want to live?</label>
+            <select name="location" id="selLocation">
+                <option value="Sunnyvale, CA">Sunnyvale</option>
+                <option value="Los Angeles, CA">Los Angeles</option>
+                <option value="Mountain View, CA">Mountain View</option>
+                <option value="">China</option>
+                <option>Australia</option>
+            </select>
+        </div>
+        <div>
+            <input type="button" value="Select first option" id="btnFirst" />
+            <input type="button" value="Select second option" id="btnSecond" />
+            <input type="button" value="Get selected option" id="btnSelected" />
+        </div>
+    </form>     
+    <script type="text/javascript">
+        (function(){
+
+            var btn1 = document.getElementById("btnFirst"),
+                btn2 = document.getElementById("btnSecond"),
+                btn3 = document.getElementById("btnSelected"),
+                selectbox = document.getElementById("selLocation");
+
+            EventUtil.addHandler(btn1, "click", function(event){
+
+                selectbox.selectedIndex = 0;
+            });
+            EventUtil.addHandler(btn2, "click", function(event){
+                selectbox.selectedIndex = 1;
+            });
+            EventUtil.addHandler(btn3, "click", function(event){
+                var selIndex = selectbox.selectedIndex;
+                var selOption = selectbox.options[selIndex];
+                alert("Selected index: " + selectbox.selectedIndex + "\nSelected text: " + selOption.text + "\nSelected value: " + selOption.value);
+            });
+            
+        })();
+    
+    </script>
+</body>
+</html>

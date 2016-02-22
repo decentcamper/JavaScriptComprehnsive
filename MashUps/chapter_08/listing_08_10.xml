@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Map Center Monitor"
+               description="Continuously shows the current map center coordinates."
+               author="Sterling Udell"
+               author_email="sterling.udell+mapplet@googlemail.com"
+               screenshot="http://sterlingudell.com/bgmm/chapter_08/center_scr.png"
+               thumbnail="http://sterlingudell.com/bgmm/chapter_08/center_thm.png">
+    <Require feature="sharedmap" />
+    <Require feature="dynamic-height"/> 
+    <Require feature="settitle" />
+  </ModulePrefs>
+  <Content type="html"><![CDATA[
+    <script type="text/javascript">
+      function mapMoveStart()
+      {
+        // mapMoveStart: event handler to initiate the recentering process
+        moving = true;
+        map.getCenterAsync(afterGetCenter);
+      };
+      
+      function mapMoveEnd()
+      {
+        // mapMoveEnd: event handler to stop recentering when map stops moving
+        moving = false;
+      };
+      
+      function mapZoomEnd()
+      {
+        // mapZoomEnd: also trigger the recentering code when the map is zoomed
+        map.getCenterAsync(afterGetCenter);
+      };
+      
+      function afterGetCenter(coordinates)
+      {
+        // afterGetCenter: callback to update title with current map center coords
+
+        if (coordinates.toUrlValue() != lastCenter.toUrlValue())
+        {
+          // Map has moved since the last time we checked
+
+          // Save the new coordinates, so we can tell next time if it's moved
+          lastCenter = coordinates;
+  
+          // Reformat the map center latitude as a more readable string
+
+          var latitude = Math.abs(coordinates.lat());
+          latitude = latitude.toFixed(5);
+          latitude = latitude + '� ';
+
+          if (coordinates.lat() > 0)
+            latitude = latitude + 'N';
+          else if (coordinates.lat() < 0)
+            latitude = latitude + 'S';
+  
+          // Ditto for longitude
+
+          var longitude = Math.abs(coordinates.lng());
+          longitude = longitude.toFixed(5);
+          longitude = longitude + '� ';
+
+          if (coordinates.lng() > 0)
+            longitude = longitude + 'E';
+          else if (coordinates.lng() < 0)
+            longitude = longitude + 'W';
+  
+          var centerDisplay = 'Map center: ' + latitude + ', ' + longitude;
+
+          // Set the mapplet's title to include the formatted center coordinates
+          _IG_SetTitle(centerDisplay);
+        }
+
+        if (moving)
+          // Map is still moving, so carry on updating the center display
+          map.getCenterAsync(afterGetCenter);
+      };
+
+      // END FUNCTION DECLARATIONS - BEGIN MAIN MAPPLET CODE
+      
+      // Declare variables for later use
+      var moving = false;
+      var lastCenter = new GLatLng(90, 0);
+      var timeout;
+
+      // Initialize the map
+      var map = new GMap2();
+
+      // Create the center "crosshair" overlay
+      var crosshair = new GScreenOverlay(
+        'http://sterlingudell.com/bgmm/markers/crosshair.png', // image URL
+        new GScreenPoint(0.5, 0.5, 'fraction', 'fraction'),       // screen offset
+        new GScreenPoint(11, 12, 'pixel', 'pixel'),               // overlay offset
+        new GScreenSize(24, 24, 'pixel', 'pixel')                 // overlay size
+      );
+      map.addOverlay(crosshair);
+
+      // Attach several events to be called when the map moves
+      GEvent.addListener(map, 'movestart', mapMoveStart);
+      GEvent.addListener(map, 'moveend',   mapMoveEnd);
+      GEvent.addListener(map, 'zoomend',   mapZoomEnd);
+
+      // Initialize the center display
+      map.getCenterAsync(afterGetCenter);
+
+      // Adjust the height of the sidebar display
+      _IG_AdjustIFrameHeight();
+    </script>
+
+    <hr /><p>This mapplet is an example from the book:</p>
+    <iframe src="http://rcm.amazon.com/e/cm?t=gadgplan-20&o=1&p=8&l=as1&asins=1430216204&nou=1&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+  ]]></Content>
+</Module>
