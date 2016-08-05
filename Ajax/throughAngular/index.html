@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/simplex/bootstrap.min.css"/>
+    <meta charset="UTF-8">
+    <title>My Box Office App</title>
+</head>
+<body ng-app="myBoxOfficeApp" ng-controller="myBoxOfficeAppController">
+<div class="pin-layout">
+    <div ng-repeat="movie in movies">
+        <h3 class="caption">{{movie.original_title}}</h3>
+        <img width= '190' ng-src="{{ baseURL + movie.poster_path}}" alt="{{movie.original_title}}">
+        <p>{{movie.overview}}</p>
+        <p>Release Date : {{movie.release_date}}</p>
+        <p>Rated R : {{movie.adult}}</p>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="myBoxOfficeApp.js"></script>
+</body>
+</html>
